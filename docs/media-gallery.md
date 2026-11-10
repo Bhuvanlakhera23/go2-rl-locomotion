@@ -72,7 +72,7 @@ Its current binary playback availability was not independently rechecked.
 
 ![Selected physical block playback with tether retained](../media/hardware/physical-block-playback.gif)
 
-Provided source 0–6 s excerpt. The robot and its tether/handler are retained in
+Provided source 31–34.5 s excerpt, selected after reviewing the complete block recordings for clearer forward progression. The robot and its tether/handler are retained in
 frame. The folder is labeled “15.5 cm step size,” but no calibrated measurement,
 controller identity or assistance record is established. This is physical block
 playback, not an independently adjudicated 15.5 cm benchmark or Foundation-02B
@@ -83,7 +83,7 @@ asserted reconstruction of the original camera timeline.
 
 ![Selected supplied split-screen Go2 pad-course recording](../media/hardware/physical-pad-course.gif)
 
-Provided source 3–9 s excerpt. These split-screen views were already present in
+Provided source 5–9 s excerpt, tightened to show the pad motion rather than the idle lead-in. These split-screen views were already present in
 the supplied recording; no views were stitched together here. Their time alignment
 is unverified. Visible tethering and people remain in frame. It is a selected
 motion example, not a complete trial or quantified pad-course success rate.

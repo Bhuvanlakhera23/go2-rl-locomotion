@@ -21,7 +21,7 @@ and citation/rights scope.
   inventory outside this repository; only selected public-safe provenance is here.
 - Nine continuous-excerpt GIFs are selected. The stair hero is 800 px wide; other
   loops are 640 px. Display rates are 12 fps, except physical footage at 10 fps.
-  Durations are 7.01 s for the simulation GIFs and 6.00 s for physical footage;
+  Durations are 7.01 s for the simulation GIFs and 3.50–6.00 s for physical footage;
   the 0.01 s difference from the source span is GIF centisecond-delay rounding.
 - Each GIF is below 10 MB. Durations, decoded frame counts, dimensions, hashes,
   metadata and representative beginning/middle/end frames were checked. GIFs

@@ -224,12 +224,12 @@
     {
       "id": "physical-pads",
       "file": "media/hardware/physical-pad-course.gif",
-      "sha256": "63e557b414123ef8192ec2ba0f94b9084e11c9272a8c3559736e820207f57b29",
-      "bytes": 6596903,
+      "sha256": "544f9d0960df5b9d5578406d25f85a0d0c2bd4c0682def879f9e3a12eb9df2b2",
+      "bytes": 4406148,
       "width": 640,
       "height": 360,
-      "frames": 60,
-      "duration_seconds": 6.0,
+      "frames": 40,
+      "duration_seconds": 4.0,
       "frame_delays_ms": [
         100
       ],
@@ -237,7 +237,7 @@
       "source_id": "curated/deploy/deployed_test/OneDrive_1_10-11-2026/policy_run_2.mp4",
       "source_sha256": "790eb6bc33b2e4327b0f274c2ce7b26164ad5619dddb4530946242fed1412029",
       "source_excerpt_seconds": [
-        3,
+        5,
         9
       ],
       "medium": "hardware",
@@ -256,7 +256,8 @@
         "metadata_stripped": true
       },
       "supplied_source_contains_split_screen": true,
-      "view_synchronization_verified": false
+      "view_synchronization_verified": false,
+      "selection_review": "Reviewed longer source timelines and dense frame sequences; selected clearer motion for presentation, not a complete evaluation or unbiased sample."
     },
     {
       "id": "physical-panel",
@@ -298,12 +299,12 @@
     {
       "id": "physical-block",
       "file": "media/hardware/physical-block-playback.gif",
-      "sha256": "d21f7b50216ec090fb5b02ccccab09a32aa062d48938ec01c30bec0dee923021",
-      "bytes": 6534245,
+      "sha256": "9ad9dbd624649eb5277dc73e5fefbe0b662b9c2b972cd2606d6d81bdb836419b",
+      "bytes": 3823829,
       "width": 640,
       "height": 360,
-      "frames": 60,
-      "duration_seconds": 6.0,
+      "frames": 35,
+      "duration_seconds": 3.5,
       "frame_delays_ms": [
         100
       ],
@@ -311,8 +312,8 @@
       "source_id": "curated/deploy/deployed_test/OneDrive_3_10-11-2026/15.5_cm_step_size/VID_20260831_184139512-00.00.06.622-00.00.44.064.mp4",
       "source_sha256": "b6a31fe47d2a58a3a2704914b2313cc2a7c399271926927d38dbef109bfb158a",
       "source_excerpt_seconds": [
-        0,
-        6
+        31,
+        34.5
       ],
       "medium": "hardware",
       "policy_evidence": "UNVERIFIED checkpoint/controller identity; do not label Foundation-02B",
@@ -328,7 +329,8 @@
         "cropped": false,
         "audio_omitted": true,
         "metadata_stripped": true
-      }
+      },
+      "selection_review": "Reviewed longer source timelines and dense frame sequences; selected clearer motion for presentation, not a complete evaluation or unbiased sample."
     },
     {
       "id": "stair-still",
