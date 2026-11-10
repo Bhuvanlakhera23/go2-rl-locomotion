@@ -87,11 +87,16 @@ release network internals, specialized rewards, curriculum code or controllers.
 
 ## Physical Go2 footage · separate evidence
 
-<p align="center"><img src="media/hardware/physical-go2-locomotion.gif" width="640" alt="Owner-approved physical Unitree Go2 motion in a laboratory"></p>
+<table>
+<tr>
+<td width="50%"><img src="media/hardware/physical-block-playback.gif" width="640" alt="Owner-approved physical Go2 block playback with tether visible"><br><strong>Block playback</strong><br>Selected physical obstacle footage; tether and handler remain visible.</td>
+<td width="50%"><img src="media/hardware/physical-pad-course.gif" width="640" alt="Owner-supplied split-screen physical Go2 recording on foam pads"><br><strong>Pad-course playback</strong><br>Supplied split-screen recording; synchronization of its views is unverified.</td>
+</tr>
+</table>
 
-Selected motion from an owner-approved physical Go2 recording. Its exact
-checkpoint, command stream and run conditions are not established by the retained
-media record. **It is not evidence that Foundation-02B passed hardware qualification**,
+Selected motion from owner-approved physical Go2 recordings. Exact checkpoints,
+command streams, assistance and run conditions are not established by the retained
+media records. Visible tethers are preserved; no unassisted-traversal claim is made. **It is not evidence that Foundation-02B passed hardware qualification**,
 nor evidence of high-step climbing on the physical robot. See
 [hardware caption boundaries](docs/media-gallery.md#physical-go2).
 

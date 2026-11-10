@@ -173,7 +173,7 @@
       "policy_evidence": "Unverified checkpoint identity; do not label Foundation-02B or a training stage",
       "publication_scope": "Owner states all first-party media and artifacts have approvals; no new content license assigned",
       "caption": "Selected physical Go2 motion from an owner-approved recording. Checkpoint, command stream and run conditions are unverified; no hardware safety qualification is implied.",
-      "readme": true,
+      "readme": false,
       "processing": {
         "cpu_ffmpeg": true,
         "palette_colors": 128,
@@ -210,6 +210,115 @@
       "publication_scope": "Previously published CC-BY-4.0 report media",
       "caption": "Selected historical reference attempt, shown as independent qualitative context. Commands and recording conditions are not matched to the fixed-policy excerpt.",
       "readme": false,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      }
+    },
+    {
+      "id": "physical-pads",
+      "file": "media/hardware/physical-pad-course.gif",
+      "sha256": "63e557b414123ef8192ec2ba0f94b9084e11c9272a8c3559736e820207f57b29",
+      "bytes": 6596903,
+      "width": 640,
+      "height": 360,
+      "frames": 60,
+      "duration_seconds": 6.0,
+      "frame_delays_ms": [
+        100
+      ],
+      "requested_fps": 10,
+      "source_id": "curated/deploy/deployed_test/OneDrive_1_10-11-2026/policy_run_2.mp4",
+      "source_sha256": "790eb6bc33b2e4327b0f274c2ce7b26164ad5619dddb4530946242fed1412029",
+      "source_excerpt_seconds": [
+        3,
+        9
+      ],
+      "medium": "hardware",
+      "policy_evidence": "UNVERIFIED checkpoint/controller identity; do not label Foundation-02B",
+      "publication_scope": "Owner-approved supplied first-party hardware media; no new license assigned",
+      "caption": "Selected supplied split-screen recording on foam-pad obstacles; view synchronization, policy identity and run conditions are unverified. Visible tether/handler context is retained.",
+      "readme": true,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "supplied_source_contains_split_screen": true,
+      "view_synchronization_verified": false
+    },
+    {
+      "id": "physical-panel",
+      "file": "media/hardware/physical-reflective-panel.gif",
+      "sha256": "303554f3728907941b539d275558053a9ac36e12a214b382a8b0ae512b99313c",
+      "bytes": 6955255,
+      "width": 640,
+      "height": 360,
+      "frames": 60,
+      "duration_seconds": 6.0,
+      "frame_delays_ms": [
+        100
+      ],
+      "requested_fps": 10,
+      "source_id": "curated/deploy/deployed_test/OneDrive_2_10-11-2026/policy_run_1-00.00.00.000-00.00.11.809.mp4",
+      "source_sha256": "f6784bdf61419793f07483bd4e89f54fac990bfd0acfb1d2935202eadf827f20",
+      "source_excerpt_seconds": [
+        2,
+        8
+      ],
+      "medium": "hardware",
+      "policy_evidence": "UNVERIFIED checkpoint/controller identity; do not label Foundation-02B",
+      "publication_scope": "Owner-approved supplied first-party hardware media; no new license assigned",
+      "caption": "Selected supplied split-screen recording on a reflective panel; friction and view synchronization are unverified. This is not a measured low-friction result.",
+      "readme": false,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "supplied_source_contains_split_screen": true,
+      "view_synchronization_verified": false
+    },
+    {
+      "id": "physical-block",
+      "file": "media/hardware/physical-block-playback.gif",
+      "sha256": "d21f7b50216ec090fb5b02ccccab09a32aa062d48938ec01c30bec0dee923021",
+      "bytes": 6534245,
+      "width": 640,
+      "height": 360,
+      "frames": 60,
+      "duration_seconds": 6.0,
+      "frame_delays_ms": [
+        100
+      ],
+      "requested_fps": 10,
+      "source_id": "curated/deploy/deployed_test/OneDrive_3_10-11-2026/15.5_cm_step_size/VID_20260831_184139512-00.00.06.622-00.00.44.064.mp4",
+      "source_sha256": "b6a31fe47d2a58a3a2704914b2313cc2a7c399271926927d38dbef109bfb158a",
+      "source_excerpt_seconds": [
+        0,
+        6
+      ],
+      "medium": "hardware",
+      "policy_evidence": "UNVERIFIED checkpoint/controller identity; do not label Foundation-02B",
+      "publication_scope": "Owner-approved supplied first-party hardware media; no new license assigned",
+      "caption": "Selected physical block playback with the visible tether and handler retained. The source folder says 15.5 cm; height calibration, policy identity and assistance are unverified.",
+      "readme": true,
       "processing": {
         "cpu_ffmpeg": true,
         "palette_colors": 128,
@@ -260,11 +369,11 @@
     }
   ],
   "discovery": {
-    "primary_media_files": 5,
-    "primary_images": 0,
+    "primary_media_files": 25,
+    "primary_images": 12,
     "primary_sidecar_notes": 4,
-    "total_reviewed_media": 451,
-    "unique_media_hashes": 269,
+    "total_reviewed_media": 471,
+    "unique_media_hashes": 288,
     "absolute_paths_and_unselected_media_inventory": "retained privately outside showcase"
   },
   "owner_approval": "Owner explicitly states approvals exist for all supplied first-party media and artifacts; no publication executed and no blanket license inferred",

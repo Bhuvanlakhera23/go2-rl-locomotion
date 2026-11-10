@@ -14,11 +14,12 @@ and citation/rights scope.
 
 ## Media and presentation
 
-- Five user-curated media files, four sidecar notes and no images were found in
-  the primary collection. The wider inventory contains 451 media files and 269
-  unique SHA256 identities. Original paths and metadata remain in a private
+- The expanded primary collection contains 13 videos and 12 analysis images,
+  plus four simulation notes. The wider inventory contains 471 media files and
+  288 unique SHA256 identities. Editing-project files were inventoried separately
+  and are excluded from the showcase. Original paths and metadata remain in a private
   inventory outside this repository; only selected public-safe provenance is here.
-- Six continuous-excerpt GIFs are selected. The stair hero is 800 px wide; other
+- Nine continuous-excerpt GIFs are selected. The stair hero is 800 px wide; other
   loops are 640 px. Display rates are 12 fps, except physical footage at 10 fps.
   Durations are 7.01 s for the simulation GIFs and 6.00 s for physical footage;
   the 0.01 s difference from the source span is GIF centisecond-delay rounding.
@@ -33,7 +34,7 @@ and citation/rights scope.
   the two-column gallery can scroll on narrow GitHub layouts. Static structure
   and relative links were checked. A private offline browser preview was attempted with GPU disabled, but Chrome
   could not start under the available socket restrictions. Live GitHub desktop/mobile
-  rendering remains unverified; static responsive structure was checked. Main README embeds four GIFs;
+  rendering remains unverified; static responsive structure was checked. Main README embeds five GIFs;
   further recordings are kept in the gallery rather than expanding the landing page.
 
 ## Provenance, rights and external links

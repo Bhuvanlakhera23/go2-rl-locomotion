@@ -10,8 +10,11 @@ not an equal-budget control. Video excerpts add no benchmark episodes.
 The qualitative stair setup is author-described as 28 cm. It has no independently
 adjudicated supported-traversal rate at that height. Owner sidecar values for the
 other clips are configuration descriptions, not verified measurements of every
-visible obstacle. The supplied physical Go2 recording has no established
+visible obstacle. The supplied physical Go2 recordings have no established
 checkpoint identity or synchronized command/condition record in this showcase.
+Some are already split-screen edits, and tethers/handlers are visible; view
+synchronization and physical assistance are not independently established.
+A source folder labeled 15.5 cm is not independent step-height calibration.
 
 ## Retained negative results
 

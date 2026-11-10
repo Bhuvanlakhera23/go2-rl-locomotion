@@ -68,6 +68,37 @@ Its current binary playback availability was not independently rechecked.
 
 ## Physical Go2
 
+### Physical block playback · added recording
+
+![Selected physical block playback with tether retained](../media/hardware/physical-block-playback.gif)
+
+Provided source 0–6 s excerpt. The robot and its tether/handler are retained in
+frame. The folder is labeled “15.5 cm step size,” but no calibrated measurement,
+controller identity or assistance record is established. This is physical block
+playback, not an independently adjudicated 15.5 cm benchmark or Foundation-02B
+hardware qualification. Times are relative to the supplied edited MP4, not an
+asserted reconstruction of the original camera timeline.
+
+### Foam-pad course · added split-screen recording
+
+![Selected supplied split-screen Go2 pad-course recording](../media/hardware/physical-pad-course.gif)
+
+Provided source 3–9 s excerpt. These split-screen views were already present in
+the supplied recording; no views were stitched together here. Their time alignment
+is unverified. Visible tethering and people remain in frame. It is a selected
+motion example, not a complete trial or quantified pad-course success rate.
+
+### Reflective panel · added split-screen recording
+
+![Selected supplied split-screen Go2 reflective-panel recording](../media/hardware/physical-reflective-panel.gif)
+
+Provided source 2–8 s excerpt. The panel looks reflective; its friction is not
+measured in the retained media evidence. Do not call this a quantified slippery-
+surface test. Views are supplied split-screen edits with unverified synchronization.
+The excerpt is not matched to the simulation friction-tile recording.
+
+### Original physical recording
+
 ![Owner-approved physical Go2 motion](../media/hardware/physical-go2-locomotion.gif)
 
 Original 29–35 s excerpt from the user-curated physical recording. The owner
@@ -77,6 +108,19 @@ in the broader media search, but a duplicate hash alone does not establish a
 checkpoint or controller identity. No high-step, command-tracking, quantitative
 hardware performance or safety-qualification claim is made. Full-video hosting
 and the exact policy caption remain unresolved.
+
+All newly added physical video sources were inspected. Three representative new
+clips were selected to cover distinct settings without loading every take into
+the README. Other supplied takes remain in the private inventory, including a pad
+recording that visibly contains a fall. The chosen excerpts do not constitute a
+complete evaluation or imply that failures were absent. Complete timelines remain
+outside this repository; full-video hosting is pending.
+
+The 12 added analysis plots were also inspected. They show joint trajectories,
+contact-pattern and loading displays, but no sealed mapping from their time axis,
+underlying logs and selected video was established. They are inventoried rather
+than used as new quantitative hardware evidence or copied as benchmark figures.
+Editing-project files are retained only with the originals, not published here.
 
 ## Additional candidates reviewed, not selected
 

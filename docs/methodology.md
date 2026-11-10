@@ -31,6 +31,8 @@ checkpoint's exact reproduction. Its full-state resume lineage remains partly
 unresolved. The historical Foundation-02B result retains its own original source
 and checkpoint provenance; this showcase does not make a new reproduction claim.
 
-Selected excerpts are not time-scaled, interpolated or stitched. Display frame
+Selected excerpts are not time-scaled, interpolated or stitched during showcase
+preparation. Some newly supplied hardware originals already contain split-screen
+views; their synchronization is unverified, and they are explicitly labeled. Display frame
 rates and GIF delay rounding are documented. Clips loop with a reset to their
 start; no seamless continuity across the loop boundary is claimed.
