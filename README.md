@@ -12,9 +12,10 @@ blind actor uses joint and body observations, velocity commands and motion histo
 without a terrain-height map in its inputs.
 
 My implementation spans Isaac Lab environments, PPO training, evaluation, policy
-export and runtime integration. The work also includes physical robot experiments
-and an investigation of why a numerically equivalent export can still fail in a
-different simulator.
+export and runtime integration. The work also includes physical robot experiments.
+A later MuJoCo experiment highlighted another challenge: matching the exported
+policy's outputs numerically was not enough to guarantee stable closed-loop
+locomotion in a different physics simulator.
 
 ## The measured high-obstacle result
 
