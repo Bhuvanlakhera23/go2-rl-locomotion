@@ -109,6 +109,7 @@ rate. Export equivalence passed only a fixed-batch-1 CPU protocol; closed-loop
 MuJoCo walking failed its minimum-height criterion. Historical training-lineage
 questions and hardware safety remain unresolved.
 [Detailed limitations, including the retained parity and MuJoCo results](docs/limitations.md).
+[Engineering case study: numerical parity and sim-to-sim transfer](docs/numerical-parity-and-sim-transfer.md).
 
 ## Code availability
 

@@ -1,11 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite the accompanying technical report. This results-only showcase has no software DOI."
+message: "Cite Bhuvan Lakhera for this engineering showcase. For Foundation-02B research results, cite the two-author technical report under preferred-citation."
 title: "Go2 RL Locomotion — Research Showcase"
 authors:
   - family-names: Lakhera
     given-names: Bhuvan
-  - family-names: Muthirayan
-    given-names: Deepan
 preferred-citation:
   type: report
   title: "Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning"
