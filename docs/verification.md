@@ -1,81 +1,31 @@
-# Local owner-review verification
+# Verification scope
 
-**SHOWCASE_READY_FOR_OWNER_REVIEW** — not authorization to publish.
+This public presentation repository has independent history from the private
+engineering source. It contains selected media, conceptual figures, published
+benchmark counts and explanatory text. No controller, weights or executable
+training pipeline is included.
 
-The showcase was built in a new directory with independent Git history. The
-private engineering repository, report, original media and research decisions
-are unchanged. No policy, simulator, training, export, robot interface or GPU
-video processing was executed. Media conversions use CPU FFmpeg.
+The original showcase preparation passed eleven bounded CPU checks. This editorial
+revision additionally checks document links, benchmark preservation, historical
+manifest preservation, GIF identities/timing, four-GIF README payload and restricted
+file types. Media optimization uses CPU FFmpeg only. No policy inference,
+simulator, training, export or hardware test was run for this revision.
 
-Eleven bounded CPU checks passed: derivative identities, GIF decoding/timing/motion,
-image/SVG integrity, links/anchors, restricted-disclosure scan, benchmark counts,
-original media preservation, private source preservation, caption/alt-text boundaries
-citation/rights scope and retention of the complete supplied recovery visual timeline.
+The current derivative sizes and hashes are in
+[media-optimization-v1.json](media-optimization-v1.json). The preceding derivative
+identities and recording descriptions remain in the unchanged
+[historical manifest](media-provenance.json). Originals were hashed before and after
+conversion. Short physical sequences retain their original sampling; other clips
+use 10 fps. Timeline speed, source spans and obstacle framing are retained.
+The complete loss-of-support visual sequence remains in the gallery.
 
-## Media and presentation
+The README embeds four GIFs; the gallery retains all ten. Static Markdown/HTML
+structure and relative links are checked. Live desktop/mobile GitHub rendering
+has not been independently verified. The earlier sandbox browser preview could
+not start, so no browser-rendering pass is claimed.
 
-- The expanded primary collection contains 14 videos and 12 analysis images,
-  plus four simulation notes. The wider inventory contains 472 media files and
-  289 unique SHA256 identities. Editing-project files were inventoried separately
-  and are excluded from the showcase. Original paths and metadata remain in a private
-  inventory outside this repository; only selected public-safe provenance is here.
-- Ten source-timeline GIFs are selected. The stair hero is 800 px wide; other
-  loops are 640 px. Display rates are 12 fps for simulation, 10 fps for most physical clips and
-  15 fps for the new block pass and recovery sequence.
-  Durations are 7.01 s for the simulation GIFs and 3.19–6.00 s for physical footage;
-  small differences from source spans (up to 0.014 s) reflect GIF frame-delay rounding.
-- Each GIF is below 10 MB. Durations, decoded frame counts, dimensions, hashes,
-  metadata and representative beginning/middle/end frames were checked. GIFs
-  intentionally loop to their start; no seamless wrap or full-evaluation claim
-  is made. Audio is omitted; source audio/metadata remain untouched privately.
-- A real source frame is resized to an 800 px PNG. A factual PNG chart and a conceptual SVG illustrate
-  the published counts and conceptual actor/critic separation. No synthetic
-  robot-performance image or interpolated frame is included.
-- GitHub-compatible Markdown/HTML uses aspect-preserving images and width limits;
-  the two-column gallery can scroll on narrow GitHub layouts. Static structure
-  and relative links were checked. A private offline browser preview was attempted with GPU disabled, but Chrome
-  could not start under the available socket restrictions. Live GitHub desktop/mobile
-  rendering remains unverified; static responsive structure was checked. Main README embeds seven GIFs;
-  further recordings are kept in the gallery rather than expanding the landing page.
-
-## Provenance, rights and external links
-
-The owner explicitly confirmed first-party media/artifact approvals. Previously
-published report media retains CC BY 4.0 attribution. New first-party media is not
-assigned a blanket license. Exact Stage 1–3 checkpoint footage and the physical
-clip's policy identity remain unresolved; the README does not invent them.
-
-The GitHub connector successfully read the existing public report-media README.
-Direct binary-video fetches were unsupported/too large, and terminal HEAD checks
-could not resolve github.com. Public report/video references are retained from
-the approved provenance, but current binary playback reachability is **not**
-reported as independently passing. New block/terrain/hardware full-video hosting
-is pending; no upload or invented URL was created.
-
-## Disclosure boundary and Git isolation
-
-The candidate contains only Markdown, citation/data/provenance files, selected
-GIF/PNG assets, a benchmark PNG and a conceptual SVG and the scoped license text. It contains no
-Python/C++/shell training code, specialized actor, reward/configuration/curriculum,
-detector, deployment controller, private logs, checkpoint, export, robot asset,
-submodule, symlink, remote, Git alternate or inherited engineering history.
-
-Before commit, every staged path/content and allowed media identity is reviewed.
-After commit, reachable commits and blobs are inspected, checked against the
-selected presentation files and compared with private code blob identities.
-The verification receipt is retained privately to avoid adding private paths or
-code-rich inventories to the public showcase. A clean-tree check completes the
-local handoff. Pattern scans are bounded disclosure checks, not legal guarantees.
-
-## Reproduction and future additions
-
-The local preparation tooling is intentionally private. It performs file hashing,
-FFprobe metadata inspection, CPU excerpt conversion and asset/link/disclosure
-checks without importing policy or simulator code. See
-[media-updates.md](media-updates.md) for the incremental workflow and
-[media-provenance.json](media-provenance.json) for the included derivative identities.
-
-No benchmark samples were added or removed; published counts and denominators
-were checked. MuJoCo R2 FAIL, V1 parity FAIL, V2 batch-1 scoped PASS and
-`approved_for_actuation: false` remain explicit. No publication or next campaign
-was initiated.
+The showcase and separate technical-report repository are public. Two complete
+report recordings are linked; other full source recordings remain outside this
+repository. Export V1 FAIL, V2 fixed-batch-1 CPU scoped PASS, MuJoCo R2 FAIL and
+**approved_for_actuation: false** remain in the [limitations](limitations.md).
+No benchmark denominator or research disposition was changed.

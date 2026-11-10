@@ -26,11 +26,11 @@ not a population-level estimate of which algorithm trains better.
   different-budget reference, not a matched extra-training control.
 - The published nominal protocol, geometry and termination interpretation stay
   attached to these results. No later protocol or clip is pooled with them.
-- The author-described 28 cm qualitative recording has no matched first-episode
+- The qualitative recording described as 28 cm in my notes has no matched first-episode
   denominator and no independent per-riser/contact measurement. It does not
   establish a measured 28 cm climbing success rate.
 
 Source: [public technical report](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/TECHNICAL_REPORT.md),
 [frozen report tag](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/releases/tag/v1.1.0).
-The existing report is unchanged. Local source-document hashes are retained in
+The existing report is unchanged. Source-document hashes are retained in
 [the public-safe provenance record](media-provenance.json).

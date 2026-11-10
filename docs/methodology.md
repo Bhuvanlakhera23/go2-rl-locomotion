@@ -17,8 +17,8 @@ fixed-sampling result is preserved separately from qualitative demonstrations.
 |---|---|---|
 | Frozen evaluation counts | Original detector-defined performance under that protocol | Hardware reliability, many-seed learning reliability or new height capability |
 | Selected simulation excerpt | Authentic selected playback from the supplied recording | A complete evaluation, matched comparisons or independent checkpoint binding |
-| Owner sidecar | Author's setup/policy description | Independent geometry, command-log or checkpoint-to-video verification |
-| Physical Go2 excerpt | Authentic owner-approved physical robot motion | Foundation-02B identity, high-step transfer or hardware safety qualification |
+| Recording notes | My setup/policy description | Independent geometry, command-log or checkpoint-to-video verification |
+| Physical Go2 excerpt | Authentic physical robot motion | Foundation-02B identity, high-step transfer or hardware safety qualification |
 | Numerical parity | Equivalence within the separately frozen batch-1 CPU profile | Correct simulation observations or stable closed-loop behavior |
 
 No exact Stage 1, Stage 2 or historical generalist checkpoint-bound demonstration

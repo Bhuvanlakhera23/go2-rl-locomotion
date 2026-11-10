@@ -1,0 +1,197 @@
+{
+  "schema": "showcase-media-optimization-v1",
+  "date": "2026-11-10",
+  "supersedes_derivative_identities_only": "media-provenance.json; historical manifest retained unchanged",
+  "assets": [
+    {
+      "file": "media/hero/fixed-policy-stair-demonstration.gif",
+      "source_sha256": "74e6168b9a43005163584fda3ec6c675891bb041334a85fa2b064a7647239115",
+      "previous_sha256": "abb309989d335f79da7ce0a8f4d04ac0ab3a5d8651da4cf4a7efc1ea2e92c933",
+      "sha256": "5e14f4de7439f757c70619229dbd37a991cbf3c0ad8277d3db3ffceced660ada",
+      "before_bytes": 5327339,
+      "bytes": 3379595,
+      "width": 640,
+      "height": 343,
+      "frames": 70,
+      "duration_seconds": 7.0,
+      "source_excerpt_seconds": [
+        34,
+        41
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/high-obstacle/separate-block-playback.gif",
+      "source_sha256": "e3b742bfaf9ddf2bad1a4884f88c9f1d6e762c6bf7c48802b9352713558dfa18",
+      "previous_sha256": "340d1040b0533f26a3266e1ec7880e69d79c9f1eeb148f7cf9e5a3f84fce6b8f",
+      "sha256": "6493414e28d4f1495ca61a957b6b2d3d39ab3cd152076de9e55160d526e26569",
+      "before_bytes": 3845897,
+      "bytes": 2096455,
+      "width": 480,
+      "height": 246,
+      "frames": 70,
+      "duration_seconds": 7.0,
+      "source_excerpt_seconds": [
+        5,
+        12
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/rough/fixed-policy-rocky-trail.gif",
+      "source_sha256": "da7b55362c53efb43b6e1a95fc3a88b41e5826d36704adcfa530d5af44d86e0b",
+      "previous_sha256": "3c14b6ee479885fb0183d4b805f212f894175c2df835c788c8f00dd2a536e3b2",
+      "sha256": "4ffdc324bad4d851bbd3499841e46bffae355c34520dd46e1632fad6182e16b4",
+      "before_bytes": 5317380,
+      "bytes": 2605165,
+      "width": 480,
+      "height": 247,
+      "frames": 70,
+      "duration_seconds": 7.0,
+      "source_excerpt_seconds": [
+        12,
+        19
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/rough/fixed-policy-friction-tiles.gif",
+      "source_sha256": "2299204c35e482809b4b748c0e7d152049c693317e2cf11baa1c38ed47f9f2d6",
+      "previous_sha256": "1776968e30c5d9a3361c2d14ea9208817d5799b7eeec192fb415f1d0d7c221e8",
+      "sha256": "47a24395e50ddb8786c620e5f5604718ff1ce0ef1238181b3bb5b731048982b6",
+      "before_bytes": 7819544,
+      "bytes": 3957521,
+      "width": 480,
+      "height": 247,
+      "frames": 70,
+      "duration_seconds": 7.0,
+      "source_excerpt_seconds": [
+        5,
+        12
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/hardware/physical-go2-locomotion.gif",
+      "source_sha256": "833daafed54e654bbad8cb4247a36455582d75347aae1ffbb57effb61d55987f",
+      "previous_sha256": "1e14ae6d80a5dcaa3762a3af0b06d58447ef8841ad5af31d0264bc02b6b5a33c",
+      "sha256": "e24ad0d5752e40322b9282edc3ac0008a5d862b8dd33fc31cef25491af877e35",
+      "before_bytes": 7436739,
+      "bytes": 4470779,
+      "width": 480,
+      "height": 270,
+      "frames": 60,
+      "duration_seconds": 6.0,
+      "source_excerpt_seconds": [
+        29,
+        35
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/high-obstacle/historical-reference-stair-attempt.gif",
+      "source_sha256": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58",
+      "previous_sha256": "c6e2824bed799ef88b6a5b84e597ff4ce3724154a4ae6eebb2e7ee3cce370e30",
+      "sha256": "4d86e634fa7eb9278ec5b1f671ec2b3ece9be3c373d51fa5f1122ada25c8f45e",
+      "before_bytes": 4049460,
+      "bytes": 2286215,
+      "width": 480,
+      "height": 258,
+      "frames": 70,
+      "duration_seconds": 7.0,
+      "source_excerpt_seconds": [
+        46,
+        53
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/hardware/physical-pad-course.gif",
+      "source_sha256": "790eb6bc33b2e4327b0f274c2ce7b26164ad5619dddb4530946242fed1412029",
+      "previous_sha256": "544f9d0960df5b9d5578406d25f85a0d0c2bd4c0682def879f9e3a12eb9df2b2",
+      "sha256": "dd17adc2ed8d1311c2b931f5b3c8ca548401a74b709ddf2721b595878653995f",
+      "before_bytes": 4406148,
+      "bytes": 2526761,
+      "width": 480,
+      "height": 270,
+      "frames": 40,
+      "duration_seconds": 4.0,
+      "source_excerpt_seconds": [
+        5,
+        9
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/hardware/physical-reflective-panel.gif",
+      "source_sha256": "f6784bdf61419793f07483bd4e89f54fac990bfd0acfb1d2935202eadf827f20",
+      "previous_sha256": "303554f3728907941b539d275558053a9ac36e12a214b382a8b0ae512b99313c",
+      "sha256": "57adaa1ffb64820bee211d0749ae61dd98a4c4827fe86cc842eca414743234f5",
+      "before_bytes": 6955255,
+      "bytes": 3945781,
+      "width": 480,
+      "height": 270,
+      "frames": 60,
+      "duration_seconds": 6.0,
+      "source_excerpt_seconds": [
+        2,
+        8
+      ],
+      "fps": 10,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/hardware/physical-block-alternate-pass.gif",
+      "source_sha256": "b776df5f162c0bbdb39380dccd8c1d542de9c6604aede4da38d3a357bdcdf104",
+      "previous_sha256": "aec145b3442ab2ed86af509692fede98e4c84782aa32f364d080377ae5fd3fd9",
+      "sha256": "19ec3d0292fc545df2f0ae0710e6a19c8a99433130e6910aba2aa484923780ff",
+      "before_bytes": 6349302,
+      "bytes": 4951571,
+      "width": 640,
+      "height": 360,
+      "frames": 48,
+      "duration_seconds": 3.19,
+      "source_excerpt_seconds": [
+        1.4,
+        4.6
+      ],
+      "fps": 15,
+      "speed_changed": false,
+      "frame_interpolation": false
+    },
+    {
+      "file": "media/hardware/emergent-recovery-attempt.gif",
+      "source_sha256": "2c0619c958f2ff7323ba34b64ca0b3098fafc83c401fa9311847a370c80e8a13",
+      "previous_sha256": "eb49ee0f007213c8a953aace0d350be7adc1732194774069bd78498adea2a97c",
+      "sha256": "e066dd84e9b34e006b417fb2eff2d99f0edb2468cffc407523b3827ab54a2cb0",
+      "before_bytes": 7711473,
+      "bytes": 6142763,
+      "width": 640,
+      "height": 360,
+      "frames": 56,
+      "duration_seconds": 3.72,
+      "source_excerpt_seconds": [
+        0,
+        3.7333333333333334
+      ],
+      "fps": 15,
+      "speed_changed": false,
+      "frame_interpolation": false
+    }
+  ]
+}

@@ -2,8 +2,9 @@
 
 These are **selected demonstrations**, not complete evaluation timelines. Each
 loop is a single continuous source excerpt at its original timeline speed; loops
-return to the beginning. Source hashes, excerpt positions and exact encoding
-results are in [media-provenance.json](media-provenance.json).
+return to the beginning. Original source hashes and excerpt positions are in the unchanged
+[historical manifest](media-provenance.json); current GIF identities and encoding
+results are in [optimization provenance](media-optimization-v1.json).
 
 ## Stairs · Foundation-02B fixed-policy playback
 
@@ -11,7 +12,7 @@ results are in [media-provenance.json](media-provenance.json).
 
 Original 34–41 s excerpt. The exact original WebM hash matches the previously
 approved report-media source. The public report identifies the fixed policy by
-author confirmation, not checkpoint-to-video cryptographic proof. The described
+my identification, not checkpoint-to-video cryptographic proof. The described
 28 cm setting is qualitative; it is not a measured supported-traversal benchmark.
 
 [Previously published full recording](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/media/fixed-mixture-stair-climb.mp4) ·
@@ -29,37 +30,39 @@ a contact/traversal adjudication.
 
 ![Selected separate-block playback](../media/high-obstacle/separate-block-playback.gif)
 
-Original 5–12 s excerpt. Owner notes identify the Foundation-02B fixed endpoint
+Original 5–12 s excerpt. My recording notes identify the Foundation-02B fixed endpoint
 and describe increasing nominal obstacle heights, with ground between blocks.
 Terminations were disabled: this is exploratory playback, not a scored run.
 Exact scene-to-video and checkpoint-to-video binding are unverified.
-Full-video hosting is pending; no upload or public URL is invented.
+The complete recording is not hosted in this repository.
 
 ## Rocky trail · simulation
 
 ![Selected fixed-policy rocky trail](../media/rough/fixed-policy-rocky-trail.gif)
 
-Original 12–19 s excerpt. Owner notes describe variable stair dimensions, local
+Original 12–19 s excerpt. My recording notes describe variable stair dimensions, local
 surface relief and teleoperation. Those notes are setup descriptions, not
 measurements of the visible obstacle at each frame. This is later fixed-policy
 footage, not proof of an earlier Stage 2 or generalist checkpoint.
-Full-video hosting is pending.
+The complete recording is not hosted here.
 
 ## Friction tiles · simulation
 
 ![Selected fixed-policy friction tiles](../media/rough/fixed-policy-friction-tiles.gif)
 
-Original 5–12 s excerpt. Owner notes describe independently randomized friction
+Original 5–12 s excerpt. My recording notes describe independently randomized friction
 tiles and hardware-derived observation-noise approximations. Such noise does not
 reproduce hardware latency, actuator dynamics or contact mechanics. No measured
-friction-robustness success rate follows from this clip. Full-video hosting is pending.
+friction-robustness success rate follows from this clip. The complete recording is not hosted here.
+
+<a id="historical-reference"></a>
 
 ## Historical reference attempt · independent qualitative context
 
 ![Selected historical reference stair attempt](../media/high-obstacle/historical-reference-stair-attempt.gif)
 
 Original 46–53 s excerpt from the previously published historical reference
-recording. The reference is author-identified Model5099, **not the adaptive
+recording. The reference is identified by me as Model5099, **not the adaptive
 sampler policy**. It is not a matched-command or matched-condition counterpart to
 the fixed-policy GIF, and is not presented as a full evaluation or failure rate.
 
@@ -73,8 +76,7 @@ Its current binary playback availability was not independently rechecked.
 ![Selected physical block playback with tether retained](../media/hardware/physical-block-alternate-pass.gif)
 
 Provided source 1.4–4.6 s excerpt from a different supplied block recording.
-This pass was selected after comparing the three recordings for more fluid
-progression; it replaces the earlier pass that looked hesitant. The robot and its tether/handler are retained in
+This is a selected pass from three recordings, not a summary of all attempts. The robot and its tether/handler are retained in
 frame. The folder is labeled “15.5 cm step size,” but no calibrated measurement,
 controller identity or assistance record is established. This is physical block
 playback, not an independently adjudicated 15.5 cm benchmark or Foundation-02B
@@ -99,7 +101,7 @@ measured in the retained media evidence. Do not call this a quantified slippery-
 surface test. Views are supplied split-screen edits with unverified synchronization.
 The excerpt is not matched to the simulation friction-tile recording.
 
-### Emergent recovery attempt
+### Behavior after loss of support
 
 ![Complete supplied recovery-attempt sequence](../media/hardware/emergent-recovery-attempt.gif)
 
@@ -108,33 +110,31 @@ speed, sampled to 15 fps for GIF display (3.72 s after GIF delay rounding). The 
 is slightly longer; no recovery motion was removed. Loss of footing is followed
 by active leg/body motion, and the clip ends with the robot still down. No
 successful self-righting, unassisted recovery or recovery success rate is claimed.
-“Emergent” is the owner's description, not proof that a particular training
-mechanism produced the response. Tethering and the supplied split-screen views
+The sequence does not identify the training mechanism behind this response. Tethering and the supplied split-screen views
 remain visible; view synchronization and checkpoint identity are unverified.
 
 ![Three timestamped frames from the supplied recovery-attempt source](../media/hardware/recovery-sequence.png)
 
 These are timestamped source frames, not fabricated states or a stitched claim
-of continuous motion. Full-video hosting remains pending.
+of continuous motion. The complete recording is not hosted here.
 
 ### Original physical recording
 
-![Owner-approved physical Go2 motion](../media/hardware/physical-go2-locomotion.gif)
+![First-party physical Go2 motion](../media/hardware/physical-go2-locomotion.gif)
 
-Original 29–35 s excerpt from the user-curated physical recording. The owner
-states that all first-party media and artifacts have the required approvals.
+Original 29–35 s excerpt from my physical recording collection. I confirmed
+the required permissions for the selected first-party media and artifacts.
 The recording's exact bytes duplicate a first-party deployed-policy video found
 in the broader media search, but a duplicate hash alone does not establish a
 checkpoint or controller identity. No high-step, command-tracking, quantitative
-hardware performance or safety-qualification claim is made. Full-video hosting
-and the exact policy caption remain unresolved.
+hardware performance or safety-qualification claim is made. The complete recording is not hosted here; the exact policy caption remains unresolved.
 
 All newly added physical video sources were inspected. Three representative new
 clips were selected to cover distinct settings without loading every take into
 the README. Other supplied takes remain in the private inventory, including a pad
 recording that visibly contains a fall. The chosen excerpts do not constitute a
 complete evaluation or imply that failures were absent. Complete timelines remain
-outside this repository; full-video hosting is pending.
+outside this repository; full recordings are not hosted here.
 
 The 12 added analysis plots were also inspected. They show joint trajectories,
 contact-pattern and loading displays, but no sealed mapping from their time axis,

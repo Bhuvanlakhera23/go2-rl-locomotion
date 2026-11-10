@@ -7,8 +7,8 @@ with one trained policy per condition and two evaluation seeds. It is not an
 estimate of population-level training reliability. The historical reference is
 not an equal-budget control. Video excerpts add no benchmark episodes.
 
-The qualitative stair setup is author-described as 28 cm. It has no independently
-adjudicated supported-traversal rate at that height. Owner sidecar values for the
+The qualitative stair setup is described in my recording notes as 28 cm. It has no independently
+adjudicated supported-traversal rate at that height. Recording-note values for the
 other clips are configuration descriptions, not verified measurements of every
 visible obstacle. The supplied physical Go2 recordings have no established
 checkpoint identity or synchronized command/condition record in this showcase.
@@ -27,7 +27,7 @@ frozen CPU numerical profile. This is not variable-batch qualification, simulati
 observation validation or sim-to-real safety approval.
 
 **MuJoCo R2 closed-loop qualification remains FAIL:** scene compilation and
-compiled-model assertions passed. The owner-run policy executed for 9.035
+compiled-model assertions passed. The policy executed for 9.035
 simulated seconds, retaining 451 completed control intervals, 452 policy-call
 attempts and 1,807 physics rows. Integrated root height reached 0.179808457 m,
 below the frozen 0.18 m minimum. The offline review found height oscillations,
