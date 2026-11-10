@@ -1,38 +1,43 @@
-# Training progression and evidence boundaries
+# Training progression and recording context
 
-This portfolio describes a staged research program: flat locomotion, rough
-terrain adaptation, generalist/stair locomotion, then fixed-sampling high-obstacle
-continuation. It shares high-level architecture and existing results, not a
-reproducible training implementation or complete experimental configuration.
+The engineering work follows four objectives: learn flat locomotion, adapt to
+rough terrain, combine locomotion tasks, and continue toward harder obstacles.
+The stage table on the main page describes those objectives. It is not a claim
+that every stage has a separately reproduced checkpoint and demonstration here.
 
-The actor is blind to terrain-height maps and uses proprioception, motion history
-and velocity commands. An asymmetric critic receives training-only privileged
-information. PPO is the learning method. The high-obstacle study investigates how
-experience allocation affects acquisition and retention; its original measured
-fixed-sampling result is preserved separately from qualitative demonstrations.
+The actor uses proprioception, motion history and velocity commands, while the
+PPO critic has additional training information. In Foundation-02B, the research
+question concerns the allocation of training experience and its effect on
+acquisition and retention. The separate report documents the task bank, evaluation
+rules and original numerical results.
 
-## What each kind of evidence establishes
+## What the recordings show
 
-| Evidence | Appropriate interpretation | Does not establish |
-|---|---|---|
-| Frozen evaluation counts | Original detector-defined performance under that protocol | Hardware reliability, many-seed learning reliability or new height capability |
-| Selected simulation excerpt | Authentic selected playback from the supplied recording | A complete evaluation, matched comparisons or independent checkpoint binding |
-| Recording notes | My setup/policy description | Independent geometry, command-log or checkpoint-to-video verification |
-| Physical Go2 excerpt | Authentic physical robot motion | Foundation-02B identity, high-step transfer or hardware safety qualification |
-| Numerical parity | Equivalence within the separately frozen batch-1 CPU profile | Correct simulation observations or stable closed-loop behavior |
+The stair, rocky-trail, friction-tile and separate-block clips show the later
+fixed policy. They are not relabeled as flat, rough-stage or generalist checkpoint
+recordings. Their descriptions combine original recording notes with the media
+identities in the [gallery](media-gallery.md) and its provenance records.
 
-No exact Stage 1, Stage 2 or historical generalist checkpoint-bound demonstration
-was established during media review. Later fixed-policy rough/stair clips remain
-labeled as that later policy. Missing footage is not replaced with third-party
-clips, synthetic robot imagery or an unrelated policy.
+The selected physical recordings show robot motion with visible tethers and
+handlers. Exact controller/checkpoint identities, commands and assistance are not
+reconstructed from appearance alone. Some originals contain split-screen views
+whose synchronization is unknown. They remain physical demonstrations rather
+than additional benchmark trials.
 
-The recovered July 8 fresh recipe is not the historical July 16 generalist
-checkpoint's exact reproduction. Its full-state resume lineage remains partly
-unresolved. The historical Foundation-02B result retains its own original source
-and checkpoint provenance; this showcase does not make a new reproduction claim.
+The hero stair scene is described as 28 cm in the recording notes. There is no
+scored first-episode evaluation at that height in this showcase. Quantitative
+climbing results retain the original 16–18 cm fixtures and denominators.
 
-Selected excerpts are not time-scaled, interpolated or stitched during showcase
-preparation. Some newly supplied hardware originals already contain split-screen
-views; their synchronization is unverified, and they are explicitly labeled. Display frame
-rates and GIF delay rounding are documented. Clips loop with a reset to their
-start; no seamless continuity across the loop boundary is claimed.
+## Historical lineage and editing
+
+The recovered July 8 fresh-training recipe is not an exact reproduction of the
+historical July 16 generalist checkpoint. That lineage question remains separate
+from the historical Foundation-02B result and from later demonstration footage.
+
+Clips are continuous excerpts at their original timeline speed. Frame sampling,
+resizing and GIF delay rounding are documented; there is no invented motion or
+interpolation. A loop restarts at its beginning. Already split-screen originals
+remain labeled as such, and selected clips do not summarize every attempt.
+
+[Original benchmark](results.md) · [Detailed limitations](limitations.md) ·
+[Media attribution](rights.md).

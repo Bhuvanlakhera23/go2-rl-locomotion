@@ -1,120 +1,116 @@
 <h1 align="center">Go2 RL Locomotion</h1>
-<p align="center"><strong>Blind reinforcement learning for quadruped locomotion and obstacle traversal</strong></p>
+<p align="center"><strong>From proprioceptive locomotion to blind obstacle traversal</strong></p>
 <p align="center">Bhuvan Lakhera · Research with Deepan Muthirayan</p>
 
 <p align="center"><img src="media/hero/fixed-policy-stair-demonstration.gif" width="640" alt="Foundation-02B fixed-policy stair-climbing playback in simulation"></p>
-<p align="center"><em>Selected simulation playback. The configured 28 cm setup is qualitative, not a measured 28 cm success rate.</em></p>
+<p align="center"><em>Simulation playback in a configured 28 cm stair scene. This is a qualitative demonstration; the measured benchmark below covers 16–18 cm.</em></p>
 
-I built a staged reinforcement-learning pipeline for the Unitree Go2, from flat-ground
-locomotion to blind obstacle traversal. The actor uses proprioception, commands and
-motion history; a privileged critic supports learning during training. My work spans
-simulation, policy training, evaluation, controller integration and physical robot
-experiments. This showcase brings together what I built, what I measured and where
-transfer remains unresolved.
+I built a staged reinforcement-learning pipeline to investigate how far a Unitree
+Go2 can progress using proprioception alone. Starting with basic locomotion, I
+worked through rough terrain, mixed locomotion tasks and higher obstacles. The
+blind actor uses joint and body observations, velocity commands and motion history,
+without a terrain-height map in its inputs.
 
-- **Four stages:** flat → rough → generalist → high-obstacle locomotion.
-- **117/128 historical completions** on the nominal 16–18 cm obstacle cohort.
-- **Blind actor:** no terrain-height map in the actor's inference inputs.
+My implementation spans Isaac Lab environments, PPO training, evaluation, policy
+export and runtime integration. The work also includes physical robot experiments
+and an investigation of why a numerically equivalent export can still fail in a
+different simulator.
 
-[Results](#historical-high-obstacle-results) · [Architecture](#from-proprioception-to-action) ·
-[Full gallery](docs/media-gallery.md) · [Technical report](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl)
+## The measured high-obstacle result
 
-This public repository contains results and presentation material. The complete
-training implementation, controllers and trained weights are not distributed here.
+<img src="media/figures/historical-completion.png" width="900" alt="Historical 16–18 cm completions: fixed sampling 117/128, adaptive sampling 47/128, historical reference 1/128">
 
-## From basic locomotion to obstacle skills
-
-| Stage | Objective | Evidence available here |
-|---|---|---|
-| Flat | Learn locomotion and command response | Training-stage context; no checkpoint-bound Stage 1 recording |
-| Rough | Adapt to uneven terrain | Later fixed-policy terrain footage; not a Stage 2 checkpoint demonstration |
-| Generalist | Combine terrain and stair behaviors | Historical progression; no independently identified Stage 3 clip |
-| High-obstacle | Learn isolated-step and multi-riser traversal | Foundation-02B fixed-policy playback and its historical benchmark |
-
-The recovered July 8 training recipe does not establish reproduction of the
-historical July 16 generalist checkpoint. Later demonstrations do not independently
-verify earlier stages. [Method and evidence boundaries](docs/methodology.md).
-
-## Beyond regular stairs · simulation
-
-![Fixed-policy playback over irregular rocky stairs](media/rough/fixed-policy-rocky-trail.gif)
-
-Selected later fixed-policy playback on irregular terrain. My recording notes describe
-variable stair geometry and teleoperation; this is a demonstration, not a scored
-robustness test. Friction variation and separate-block footage are in the
-[gallery](docs/media-gallery.md).
-
-## Physical Go2 · block traversal
-
-![Selected physical Go2 block pass with tether and handler visible](media/hardware/physical-block-alternate-pass.gif)
-
-A selected physical recording with tether and handler visible. The retained media
-does not bind this pass to an exact checkpoint, command stream or assistance record.
-It demonstrates physical motion, not a measured hardware climbing frontier or
-qualified Foundation-02B transfer. More [physical footage](docs/media-gallery.md#physical-go2)
-includes pad-course motion and **behavior after loss of support**: the robot keeps
-moving its legs and body, but does not self-right in the complete recorded sequence.
-
-## Historical reference · simulation context
-
-![Historical pretrained reference stair attempt](media/high-obstacle/historical-reference-stair-attempt.gif)
-
-Selected playback of the historical Model5099 reference, not the adaptive sampler.
-This and the hero clip illustrate different behavior; their commands and conditions
-are not matched, so the videos are not a controlled comparison.
-[Complete published recordings and context](docs/media-gallery.md#historical-reference).
-
-## Historical high-obstacle results
-
-<img src="media/figures/historical-completion.png" width="900" alt="Historical 16–18 cm completion counts: fixed 117/128, adaptive 47/128, historical reference 1/128">
-
-| Original nominal evaluation | Fixed sampling | Adaptive sampling | Historical reference |
+| Historical nominal simulation evaluation | Fixed sampling | Adaptive sampling | Historical reference |
 |---|---:|---:|---:|
-| Combined 16–18 cm isolated / three-riser staircase | **117/128 · 91.4%** | 47/128 · 36.7% | 1/128 · 0.8% |
+| Combined 16–18 cm isolated steps / three-riser staircases | **117/128 · 91.4%** | 47/128 · 36.7% | 1/128 · 0.8% |
 | Isolated 18 cm | **31/32** | 12/32 | 0/32 |
 | Three-riser staircase 18 cm | **25/32** | 1/32 | 0/32 |
 
-These are detector-defined first-episode completions: one training seed per
-condition and two evaluation seeds, not independent PPO replications. The
-historical reference is not an equal-training-budget control. Acquisition gains
-coexist with ordinary-locomotion retention costs. Videos add no samples to these
-denominators, and the 28 cm demonstration does not extend this benchmark.
-[Results and sources](docs/results.md).
+The fixed mixture acquired substantially more complete traversals than the
+specified adaptive sampler in this study. These counts come from the original
+supported-traversal detector, one training seed per condition and two evaluation
+seeds. The historical reference did not receive an equal continuation-training
+budget. [Results and evaluation details](docs/results.md).
 
-## From proprioception to action
+## How I developed the pipeline
 
-<img src="media/figures/conceptual-architecture.svg" width="960" alt="Proprioception, commands and temporal context feed a blind actor; a privileged critic is used only for PPO training">
+| Stage | Engineering objective |
+|---|---|
+| **1 · Flat-ground locomotion** | Establish stable movement and velocity-command tracking |
+| **2 · Rough-terrain adaptation** | Develop foot placement and body control on uneven surfaces |
+| **3 · Generalist locomotion** | Combine terrain and stair tasks with ordinary movement commands |
+| **4 · High-obstacle continuation** | Learn complete isolated-step and multi-riser traversal while retaining general locomotion |
 
-Motion history gives the actor temporal context. The asymmetric critic uses
-privileged information during PPO training, outside the actor's inference inputs.
-Foundation-02B continues the historical prior with a fixed terrain-task mixture.
-[Conceptual architecture](docs/architecture.md).
+Each stage posed a different problem. Moving near an obstacle was not enough;
+the later evaluation needed to distinguish supported climbing from partial
+footholds or a robot that simply remained upright. I also tracked ordinary
+locomotion, so a climbing gain could be examined alongside changes in tracking,
+action variation and effort proxies.
 
-I also worked on simulator-to-controller interfaces, observation/action contracts,
-Unitree SDK2 and CycloneDDS integration, joint mapping and position-target control.
-The older 48-observation controller stack is separate from the temporal Foundation-02B
-interface; that experience does not establish a qualified safety system.
+## Architecture and engineering
 
-## Limits of the evidence
+<img src="media/figures/conceptual-architecture.svg" width="960" alt="Proprioception, commands and temporal context feed a blind actor; a privileged critic supports PPO training">
 
-The strongest measured result here is a bounded simulation benchmark, not a claim
-of reliable climbing across training seeds or physical robots. Numerical export
-equivalence holds only for a fixed-batch-1 CPU profile. Closed-loop MuJoCo transfer
-failed its minimum-height criterion; its cause remains unresolved. Selected hardware
-footage does not establish policy identity, repeatability or deployment safety.
+The temporal representation gives the actor context about recent motion. During
+PPO training, an asymmetric critic receives privileged information that the actor
+does not use at inference. I developed the staged simulation/training workflow,
+evaluation and export interfaces around that separation.
 
-[Detailed limitations and retained negative results](docs/limitations.md) ·
-[Verification scope](docs/verification.md).
+Runtime integration brought another set of problems: observation packing, history
+order, joint mapping, action scaling and position-target control. My work with
+Unitree SDK2 and CycloneDDS involved an older **48-observation controller stack**;
+that interface is separate from the later history-conditioned Foundation-02B
+system. [Architecture](docs/architecture.md) · [Training and media context](docs/methodology.md).
 
-## Research and attribution
+## On irregular terrain · simulation
 
-**Bhuvan Lakhera and Deepan Muthirayan.** *Experience Allocation and
-Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning.*
-Technical report, 2026; not a peer-reviewed conference publication.
+![Later fixed-policy playback over irregular rocky stairs](media/rough/fixed-policy-rocky-trail.gif)
 
-[Technical report](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl) ·
-[Frozen v1.1.0](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/releases/tag/v1.1.0) ·
-[Citation](CITATION.cff) · [Media rights](docs/rights.md).
+Selected fixed-policy playback over irregular stairs. Friction variation and
+separate-block recordings are in the [full gallery](docs/media-gallery.md).
 
-Previously published report media retains CC BY 4.0 attribution. Other first-party
-media has no new blanket reuse license. No actuation approval is granted.
+## On the physical Go2
+
+![Physical Go2 block pass with tether and handler visible](media/hardware/physical-block-alternate-pass.gif)
+
+A selected physical block pass, with the tether and handler visible. It is a
+hardware demonstration, not a scored Foundation-02B benchmark. The gallery also
+shows pad-course motion and [behavior after loss of support](docs/media-gallery.md#behavior-after-loss-of-support),
+where the robot continued moving but did not self-right.
+
+## A historical reference · simulation
+
+![Historical Model5099 reference attempting stairs](media/high-obstacle/historical-reference-stair-attempt.gif)
+
+The historical Model5099 reference attempting stairs. This provides qualitative
+context for the hero clip; the recordings are not a matched-command comparison.
+[Complete published recordings](docs/media-gallery.md#historical-reference).
+
+## What the experiments taught me
+
+Harder-terrain exposure and learned climbing are different outcomes. The most
+useful measure was completed traversal, considered together with ordinary
+locomotion. The fixed curriculum's acquisition gains also carried tracking and
+motion-cost trade-offs—one reason I treat retention as part of the learning
+problem rather than a final check.
+
+I investigate that question with **Deepan Muthirayan** in
+[*Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped
+Obstacle Learning*](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl).
+The technical report explains the matched continuation experiment, exposure
+records and per-task counterexamples. [Report v1.1.0](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/releases/tag/v1.1.0) ·
+[Citation](CITATION.cff).
+
+## Evaluation scope
+
+The benchmark is a single-training-seed simulation study, not a hardware success
+rate. Export equivalence passed only a fixed-batch-1 CPU protocol; closed-loop
+MuJoCo walking failed its minimum-height criterion. Historical training-lineage
+questions and hardware safety remain unresolved.
+[Detailed limitations, including the retained parity and MuJoCo results](docs/limitations.md).
+
+## Code availability
+
+The complete training implementation and trained policies are not publicly
+distributed here. This repository focuses on demonstrations, measured results
+and research documentation. [Media attribution and rights](docs/rights.md).

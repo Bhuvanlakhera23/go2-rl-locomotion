@@ -1,19 +1,35 @@
-# High-level architecture
+# How the locomotion system is organized
 
-![Conceptual blind actor and privileged critic](../media/figures/conceptual-architecture.svg)
+![Blind actor and training-only privileged critic](../media/figures/conceptual-architecture.svg)
 
-**Inference:** proprioceptive observations and velocity commands → temporal motion
-context → policy actor → joint commands → robot feedback. No actor terrain-height
-map is required.
+## Learning to act without a terrain map
 
-**Training only:** a critic uses privileged information for PPO value learning.
-Its inputs and value output do not become deployed actor sensors or commands.
+The actor receives proprioceptive observations and velocity commands. Recent
+motion history supplies temporal context: the policy can respond to how the body
+and joints have been moving, rather than relying on a terrain-height map.
+During PPO training, a separate critic uses privileged information to learn value
+estimates. Those inputs are not added to the actor's deployed sensors.
 
-The project progresses from a locomotion prior through varied terrain and stair
-behaviors to fixed-sampling high-obstacle continuation. This is a conceptual
-research overview. The specialized actor/encoder source, reward coefficients,
-terrain/curriculum generation, detector and deployment implementation remain
-private and are deliberately absent from this repository.
+## Building the training and evaluation workflow
 
-No architecture illustration is evidence that the physical or MuJoCo deployment
-has been qualified. See [limitations](limitations.md).
+I developed the Isaac Lab workflow across flat-ground locomotion, rough terrain,
+generalist tasks and high-obstacle continuation. The later Foundation-02B study
+changes how terrain-task exposure is allocated and measures both obstacle
+acquisition and ordinary locomotion. The technical report gives the published
+[methods and numerical comparison](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl).
+
+Evaluation distinguishes partial acquisition from full supported traversal.
+Tracking errors, resets and motion-cost proxies provide additional views of the
+policy; remaining upright or reaching a foothold is not automatically a climb.
+
+## Export and controller interfaces
+
+Export adds an interface contract: current observations, temporal history, joint
+order, residual scale and default position must agree between training and runtime.
+Numerical parity checks one part of that contract. Closed-loop behavior also
+depends on observation construction, simulation dynamics and control timing.
+
+I worked on joint mapping and position-target interfaces with Unitree SDK2 and
+CycloneDDS. The earlier 48-observation deployment stack and the later temporal
+Foundation-02B interface are distinct systems. Their results should not be
+interchanged. See [runtime and safety limitations](limitations.md).
