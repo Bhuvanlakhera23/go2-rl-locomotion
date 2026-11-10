@@ -47,10 +47,15 @@ lineage. This portfolio does not relabel later footage as earlier-stage evidence
 
 <table>
 <tr>
-<td width="50%"><img src="media/high-obstacle/separate-block-playback.gif" width="640" alt="Fixed-policy simulation playback across separated blocks"><br><strong>Separate obstacles</strong><br>Exploratory block-course playback. Blocks return to ground between obstacles; this is not a cumulative staircase. Terminations were disabled according to the owner notes.</td>
-<td width="50%"><img src="media/rough/fixed-policy-rocky-trail.gif" width="640" alt="Fixed-policy simulation playback on rocky stairs"><br><strong>Irregular terrain</strong><br>Selected rocky-stair playback by the later fixed policy. Terrain and teleoperation notes describe the setup; this is not a scored robustness result.</td>
+<td width="33%"><img src="media/high-obstacle/separate-block-playback.gif" width="640" alt="Fixed-policy simulation playback across separated blocks"><br><strong>Separate obstacles</strong><br>Exploratory block-course playback. Blocks return to ground between obstacles; this is not a cumulative staircase. Terminations were disabled according to the owner notes.</td>
+<td width="33%"><img src="media/rough/fixed-policy-rocky-trail.gif" width="640" alt="Fixed-policy simulation playback on rocky stairs"><br><strong>Irregular terrain</strong><br>Selected rocky-stair playback by the later fixed policy. Terrain and teleoperation notes describe the setup; this is not a scored robustness result.</td>
+<td width="33%"><img src="media/rough/fixed-policy-friction-tiles.gif" width="640" alt="Fixed-policy simulation walking over randomized friction tiles"><br><strong>Friction variation</strong><br>Selected playback across labeled friction tiles, with owner-described observation noise. A qualitative example, not a measured robustness score.</td>
 </tr>
 </table>
+
+**What to watch:** obstacle negotiation, motion over irregular geometry and gait
+across changing surface conditions. These show distinct behaviors by the later
+fixed policy; they do not establish the earlier-stage checkpoints.
 
 All loops are short excerpts at the original timeline speed, with frame-rate
 reduction for display. They are not complete evaluations or matched comparisons.
@@ -85,19 +90,34 @@ sampling high-obstacle continuation. This diagram explains the idea; it does not
 release network internals, specialized rewards, curriculum code or controllers.
 [Architecture overview](docs/architecture.md).
 
+## Emergent recovery attempt · physical Go2
+
+<p align="center"><img src="media/hardware/emergent-recovery-attempt.gif" width="720" alt="Complete supplied physical Go2 clip showing loss of footing, active leg and body motion, and an ending with the robot still down"></p>
+
+A short, interesting response when the support surface shifts: the robot continues
+moving its legs and body after losing footing. This is the **complete supplied
+visual sequence**, at the original timeline speed, rather than a success-only cut.
+
+“Emergent recovery” is the owner's description. **The clip ends with the robot
+still down; it does not demonstrate successful self-righting.** It motivates a
+research question about the learned response, without establishing its training
+mechanism or repeatability. Watch the body reorientation, continuing leg motion
+and displacement of the loose pads. [Sequence frames and context](docs/media-gallery.md#emergent-recovery-attempt).
+
 ## Physical Go2 footage · separate evidence
 
 <table>
 <tr>
-<td width="50%"><img src="media/hardware/physical-block-playback.gif" width="640" alt="Owner-approved physical Go2 block playback with tether visible"><br><strong>Block playback</strong><br>Selected physical obstacle footage; tether and handler remain visible.</td>
+<td width="50%"><img src="media/hardware/physical-block-alternate-pass.gif" width="640" alt="Owner-approved physical Go2 block playback with tether visible"><br><strong>Block pass</strong><br>A different recorded pass, selected for more fluid progression across the block; tether and handler remain visible.</td>
 <td width="50%"><img src="media/hardware/physical-pad-course.gif" width="640" alt="Owner-supplied split-screen physical Go2 recording on foam pads"><br><strong>Pad-course playback</strong><br>Supplied split-screen recording; synchronization of its views is unverified.</td>
 </tr>
 </table>
 
 Selected motion from owner-approved physical Go2 recordings. Exact checkpoints,
 command streams, assistance and run conditions are not established by the retained
-media records. Visible tethers are preserved; no unassisted-traversal claim is made. **It is not evidence that Foundation-02B passed hardware qualification**,
-nor evidence of high-step climbing on the physical robot. See
+media records. Visible tethers are preserved; no unassisted-traversal claim is made.
+These are qualitative physical-motion observations, not a measured hardware
+climbing frontier or Foundation-02B transfer qualification. See
 [hardware caption boundaries](docs/media-gallery.md#physical-go2).
 
 ## What remains unvalidated

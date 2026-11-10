@@ -9,7 +9,7 @@ publication, remote, release or push was authorized or performed.
 |---|---|
 | Fixed-policy stair GIF and still | Previously approved report media, CC BY 4.0; Bhuvan Lakhera and Deepan Muthirayan. Derived from the exact source hash recorded by the public report |
 | Historical-reference GIF | Previously approved report media, CC BY 4.0; Bhuvan Lakhera and Deepan Muthirayan. A new short excerpt from the published complete recording |
-| Curated block, rocky-trail, friction-tile and physical Go2 excerpts, including the later-added pad/panel/block recordings | Owner-approved first-party media; no new content license assigned here. Exact policy and experimental identity remain separately constrained |
+| Curated block, rocky-trail, friction-tile and physical Go2 excerpts, including the later-added pad/panel/block and owner-requested recovery recordings | Owner-approved first-party media; no new content license assigned here. Exact policy and experimental identity remain separately constrained |
 | Conceptual diagram, benchmark redraw and new presentation text | Created for this results-only showcase; no blanket project license assigned |
 | Linked technical report | Remains under its existing separate terms; unchanged |
 

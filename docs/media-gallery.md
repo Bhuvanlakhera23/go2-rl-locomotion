@@ -70,9 +70,11 @@ Its current binary playback availability was not independently rechecked.
 
 ### Physical block playback · added recording
 
-![Selected physical block playback with tether retained](../media/hardware/physical-block-playback.gif)
+![Selected physical block playback with tether retained](../media/hardware/physical-block-alternate-pass.gif)
 
-Provided source 31–34.5 s excerpt, selected after reviewing the complete block recordings for clearer forward progression. The robot and its tether/handler are retained in
+Provided source 1.4–4.6 s excerpt from a different supplied block recording.
+This pass was selected after comparing the three recordings for more fluid
+progression; it replaces the earlier pass that looked hesitant. The robot and its tether/handler are retained in
 frame. The folder is labeled “15.5 cm step size,” but no calibrated measurement,
 controller identity or assistance record is established. This is physical block
 playback, not an independently adjudicated 15.5 cm benchmark or Foundation-02B
@@ -96,6 +98,24 @@ Provided source 2–8 s excerpt. The panel looks reflective; its friction is not
 measured in the retained media evidence. Do not call this a quantified slippery-
 surface test. Views are supplied split-screen edits with unverified synchronization.
 The excerpt is not matched to the simulation friction-tile recording.
+
+### Emergent recovery attempt
+
+![Complete supplied recovery-attempt sequence](../media/hardware/emergent-recovery-attempt.gif)
+
+All 3.733 s of the supplied **visual** timeline are represented at the original
+speed, sampled to 15 fps for GIF display (3.72 s after GIF delay rounding). The source file's audio/container tail
+is slightly longer; no recovery motion was removed. Loss of footing is followed
+by active leg/body motion, and the clip ends with the robot still down. No
+successful self-righting, unassisted recovery or recovery success rate is claimed.
+“Emergent” is the owner's description, not proof that a particular training
+mechanism produced the response. Tethering and the supplied split-screen views
+remain visible; view synchronization and checkpoint identity are unverified.
+
+![Three timestamped frames from the supplied recovery-attempt source](../media/hardware/recovery-sequence.png)
+
+These are timestamped source frames, not fabricated states or a stitched claim
+of continuous motion. Full-video hosting remains pending.
 
 ### Original physical recording
 

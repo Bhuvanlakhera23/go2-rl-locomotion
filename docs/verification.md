@@ -7,22 +7,23 @@ private engineering repository, report, original media and research decisions
 are unchanged. No policy, simulator, training, export, robot interface or GPU
 video processing was executed. Media conversions use CPU FFmpeg.
 
-Ten bounded CPU checks passed: derivative identities, GIF decoding/timing/motion,
+Eleven bounded CPU checks passed: derivative identities, GIF decoding/timing/motion,
 image/SVG integrity, links/anchors, restricted-disclosure scan, benchmark counts,
 original media preservation, private source preservation, caption/alt-text boundaries
-and citation/rights scope.
+citation/rights scope and retention of the complete supplied recovery visual timeline.
 
 ## Media and presentation
 
-- The expanded primary collection contains 13 videos and 12 analysis images,
-  plus four simulation notes. The wider inventory contains 471 media files and
-  288 unique SHA256 identities. Editing-project files were inventoried separately
+- The expanded primary collection contains 14 videos and 12 analysis images,
+  plus four simulation notes. The wider inventory contains 472 media files and
+  289 unique SHA256 identities. Editing-project files were inventoried separately
   and are excluded from the showcase. Original paths and metadata remain in a private
   inventory outside this repository; only selected public-safe provenance is here.
-- Nine continuous-excerpt GIFs are selected. The stair hero is 800 px wide; other
-  loops are 640 px. Display rates are 12 fps, except physical footage at 10 fps.
-  Durations are 7.01 s for the simulation GIFs and 3.50–6.00 s for physical footage;
-  the 0.01 s difference from the source span is GIF centisecond-delay rounding.
+- Ten source-timeline GIFs are selected. The stair hero is 800 px wide; other
+  loops are 640 px. Display rates are 12 fps for simulation, 10 fps for most physical clips and
+  15 fps for the new block pass and recovery sequence.
+  Durations are 7.01 s for the simulation GIFs and 3.19–6.00 s for physical footage;
+  small differences from source spans (up to 0.014 s) reflect GIF frame-delay rounding.
 - Each GIF is below 10 MB. Durations, decoded frame counts, dimensions, hashes,
   metadata and representative beginning/middle/end frames were checked. GIFs
   intentionally loop to their start; no seamless wrap or full-evaluation claim
@@ -34,7 +35,7 @@ and citation/rights scope.
   the two-column gallery can scroll on narrow GitHub layouts. Static structure
   and relative links were checked. A private offline browser preview was attempted with GPU disabled, but Chrome
   could not start under the available socket restrictions. Live GitHub desktop/mobile
-  rendering remains unverified; static responsive structure was checked. Main README embeds five GIFs;
+  rendering remains unverified; static responsive structure was checked. Main README embeds seven GIFs;
   further recordings are kept in the gallery rather than expanding the landing page.
 
 ## Provenance, rights and external links

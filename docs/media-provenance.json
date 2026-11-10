@@ -137,7 +137,7 @@
       "policy_evidence": "Foundation-02B fixed endpoint according to owner sidecar; no run manifest binding",
       "publication_scope": "Owner approved first-party media for local showcase; publication not executed; no new content license assigned",
       "caption": "Selected flat friction-tile playback with owner-described observation-noise perturbations; not a hardware or measured robustness result.",
-      "readme": false,
+      "readme": true,
       "processing": {
         "cpu_ffmpeg": true,
         "palette_colors": 128,
@@ -256,8 +256,7 @@
         "metadata_stripped": true
       },
       "supplied_source_contains_split_screen": true,
-      "view_synchronization_verified": false,
-      "selection_review": "Reviewed longer source timelines and dense frame sequences; selected clearer motion for presentation, not a complete evaluation or unbiased sample."
+      "view_synchronization_verified": false
     },
     {
       "id": "physical-panel",
@@ -298,22 +297,23 @@
     },
     {
       "id": "physical-block",
-      "file": "media/hardware/physical-block-playback.gif",
-      "sha256": "9ad9dbd624649eb5277dc73e5fefbe0b662b9c2b972cd2606d6d81bdb836419b",
-      "bytes": 3823829,
-      "width": 640,
-      "height": 360,
-      "frames": 35,
-      "duration_seconds": 3.5,
+      "file": "media/hardware/physical-block-alternate-pass.gif",
+      "sha256": "aec145b3442ab2ed86af509692fede98e4c84782aa32f364d080377ae5fd3fd9",
+      "bytes": 6349302,
+      "width": 720,
+      "height": 405,
+      "frames": 48,
+      "duration_seconds": 3.19,
       "frame_delays_ms": [
-        100
+        60,
+        70
       ],
-      "requested_fps": 10,
-      "source_id": "curated/deploy/deployed_test/OneDrive_3_10-11-2026/15.5_cm_step_size/VID_20260831_184139512-00.00.06.622-00.00.44.064.mp4",
-      "source_sha256": "b6a31fe47d2a58a3a2704914b2313cc2a7c399271926927d38dbef109bfb158a",
+      "requested_fps": 15,
+      "source_id": "curated/deploy/deployed_test/OneDrive_3_10-11-2026/15.5_cm_step_size/VID_20260831_183924562-00.00.02.119-00.01.25.823.mp4",
+      "source_sha256": "b776df5f162c0bbdb39380dccd8c1d542de9c6604aede4da38d3a357bdcdf104",
       "source_excerpt_seconds": [
-        31,
-        34.5
+        1.4,
+        4.6
       ],
       "medium": "hardware",
       "policy_evidence": "UNVERIFIED checkpoint/controller identity; do not label Foundation-02B",
@@ -330,7 +330,49 @@
         "audio_omitted": true,
         "metadata_stripped": true
       },
-      "selection_review": "Reviewed longer source timelines and dense frame sequences; selected clearer motion for presentation, not a complete evaluation or unbiased sample."
+      "selection_review": "Different source recording selected after dense timeline review; source 1.4\u20134.6 seconds, original speed, no motion interpolation."
+    },
+    {
+      "id": "emergent-recovery",
+      "file": "media/hardware/emergent-recovery-attempt.gif",
+      "sha256": "eb49ee0f007213c8a953aace0d350be7adc1732194774069bd78498adea2a97c",
+      "bytes": 7711473,
+      "width": 720,
+      "height": 405,
+      "frames": 56,
+      "duration_seconds": 3.72,
+      "frame_delays_ms": [
+        60,
+        70
+      ],
+      "requested_fps": 15,
+      "source_id": "curated/deploy/deployed_test/OneDrive_1_10-11-2026/emergent_recovery.mp4",
+      "source_sha256": "2c0619c958f2ff7323ba34b64ca0b3098fafc83c401fa9311847a370c80e8a13",
+      "source_excerpt_seconds": [
+        0,
+        3.7333333333333334
+      ],
+      "medium": "hardware",
+      "policy_evidence": "UNVERIFIED checkpoint/controller identity; emergent is the owner description, not a demonstrated training mechanism",
+      "publication_scope": "Owner explicitly requested inclusion of this first-party recording; no new blanket license assigned",
+      "caption": "Complete supplied visual timeline: loss of footing followed by active leg/body motion. The recording ends with the robot down; successful self-righting is not shown. Visible tether and supplied split-screen views are retained.",
+      "readme": true,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "source_visual_frame_count": 112,
+      "source_visual_duration_seconds": 3.7333333333333334,
+      "complete_supplied_visual_timeline": true,
+      "successful_self_righting_demonstrated": false,
+      "supplied_source_contains_split_screen": true,
+      "view_synchronization_verified": false
     },
     {
       "id": "stair-still",
@@ -368,14 +410,32 @@
       "readme": true,
       "width": 960,
       "height": 350
+    },
+    {
+      "id": "recovery-sequence-stills",
+      "file": "media/hardware/recovery-sequence.png",
+      "sha256": "bbf78a4ba86b04d4df4839afe32920aca7e980c29e58affb1865ef6da5e1a5f4",
+      "bytes": 449618,
+      "width": 1200,
+      "height": 288,
+      "medium": "hardware source-frame storyboard",
+      "source_id": "curated/deploy/deployed_test/OneDrive_1_10-11-2026/emergent_recovery.mp4",
+      "source_sha256": "2c0619c958f2ff7323ba34b64ca0b3098fafc83c401fa9311847a370c80e8a13",
+      "source_times_seconds": [
+        0,
+        1,
+        3.6
+      ],
+      "caption": "Timestamped source frames; supplied split-screen context retained. The final frame is still down.",
+      "readme": false
     }
   ],
   "discovery": {
-    "primary_media_files": 25,
+    "primary_media_files": 26,
     "primary_images": 12,
     "primary_sidecar_notes": 4,
-    "total_reviewed_media": 471,
-    "unique_media_hashes": 288,
+    "total_reviewed_media": 472,
+    "unique_media_hashes": 289,
     "absolute_paths_and_unselected_media_inventory": "retained privately outside showcase"
   },
   "owner_approval": "Owner explicitly states approvals exist for all supplied first-party media and artifacts; no publication executed and no blanket license inferred",
