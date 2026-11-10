@@ -1,0 +1,285 @@
+{
+  "schema": "go2-results-showcase-media-provenance-v1",
+  "review_date": "2026-11-10",
+  "assets": [
+    {
+      "id": "stairs-hero",
+      "file": "media/hero/fixed-policy-stair-demonstration.gif",
+      "sha256": "abb309989d335f79da7ce0a8f4d04ac0ab3a5d8651da4cf4a7efc1ea2e92c933",
+      "bytes": 5327339,
+      "width": 800,
+      "height": 429,
+      "frames": 84,
+      "duration_seconds": 7.01,
+      "frame_delays_ms": [
+        80,
+        90
+      ],
+      "requested_fps": 12,
+      "source_id": "curated/sim/steps_28cms/steps_28cms.webm",
+      "source_sha256": "74e6168b9a43005163584fda3ec6c675891bb041334a85fa2b064a7647239115",
+      "source_excerpt_seconds": [
+        34,
+        41
+      ],
+      "medium": "simulation",
+      "policy_evidence": "Author-identified Foundation-02B fixed policy; recording not cryptographically bound to checkpoint",
+      "publication_scope": "previously approved CC-BY-4.0 media; exact original hash matches public report manifest",
+      "caption": "Selected stair playback. Author-described 28 cm setup; no measured 28 cm benchmark or independently verified traversal.",
+      "readme": true,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "owner_note_sha256": "72600e809bc9484484e065615f50416fc5a91ec5602129b46a0f2e969b29b869"
+    },
+    {
+      "id": "separate-blocks",
+      "file": "media/high-obstacle/separate-block-playback.gif",
+      "sha256": "340d1040b0533f26a3266e1ec7880e69d79c9f1eeb148f7cf9e5a3f84fce6b8f",
+      "bytes": 3845897,
+      "width": 640,
+      "height": 328,
+      "frames": 84,
+      "duration_seconds": 7.01,
+      "frame_delays_ms": [
+        80,
+        90
+      ],
+      "requested_fps": 12,
+      "source_id": "curated/sim/asc_obstacle_course/asc_obstacle_course.webm",
+      "source_sha256": "e3b742bfaf9ddf2bad1a4884f88c9f1d6e762c6bf7c48802b9352713558dfa18",
+      "source_excerpt_seconds": [
+        5,
+        12
+      ],
+      "medium": "simulation",
+      "policy_evidence": "Foundation-02B fixed endpoint according to owner sidecar; no run manifest binding",
+      "publication_scope": "Owner approved first-party media for local showcase; publication not executed; no new content license assigned",
+      "caption": "Selected exploratory block-course playback; separate obstacles return to ground. Terminations disabled according to owner notes; not a scored evaluation.",
+      "readme": true,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "owner_note_sha256": "fb43e8432d70552d82ee2448ceaf8823f5da835bd9b47f554b95fe83022d54e2"
+    },
+    {
+      "id": "rocky-trail",
+      "file": "media/rough/fixed-policy-rocky-trail.gif",
+      "sha256": "3c14b6ee479885fb0183d4b805f212f894175c2df835c788c8f00dd2a536e3b2",
+      "bytes": 5317380,
+      "width": 640,
+      "height": 330,
+      "frames": 84,
+      "duration_seconds": 7.01,
+      "frame_delays_ms": [
+        80,
+        90
+      ],
+      "requested_fps": 12,
+      "source_id": "curated/sim/jagged_steps/jagged_steps.webm",
+      "source_sha256": "da7b55362c53efb43b6e1a95fc3a88b41e5826d36704adcfa530d5af44d86e0b",
+      "source_excerpt_seconds": [
+        12,
+        19
+      ],
+      "medium": "simulation",
+      "policy_evidence": "Foundation-02B fixed endpoint according to owner sidecar; not a Stage-2 checkpoint demonstration",
+      "publication_scope": "Owner approved first-party media for local showcase; publication not executed; no new content license assigned",
+      "caption": "Selected fixed-policy rocky stair playback. This shows the later policy on varied terrain, not footage establishing an earlier training-stage checkpoint.",
+      "readme": true,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "owner_note_sha256": "1779173ee158142188dad7f36a7b6403dafaaef2910b6b0b9e026d59a86b9c17"
+    },
+    {
+      "id": "friction-tiles",
+      "file": "media/rough/fixed-policy-friction-tiles.gif",
+      "sha256": "1776968e30c5d9a3361c2d14ea9208817d5799b7eeec192fb415f1d0d7c221e8",
+      "bytes": 7819544,
+      "width": 640,
+      "height": 330,
+      "frames": 84,
+      "duration_seconds": 7.01,
+      "frame_delays_ms": [
+        80,
+        90
+      ],
+      "requested_fps": 12,
+      "source_id": "curated/sim/random_fric/random_fric.webm",
+      "source_sha256": "2299204c35e482809b4b748c0e7d152049c693317e2cf11baa1c38ed47f9f2d6",
+      "source_excerpt_seconds": [
+        5,
+        12
+      ],
+      "medium": "simulation",
+      "policy_evidence": "Foundation-02B fixed endpoint according to owner sidecar; no run manifest binding",
+      "publication_scope": "Owner approved first-party media for local showcase; publication not executed; no new content license assigned",
+      "caption": "Selected flat friction-tile playback with owner-described observation-noise perturbations; not a hardware or measured robustness result.",
+      "readme": false,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      },
+      "owner_note_sha256": "dcb3061ba720bc6cf218ad2c371fbdc7bd2d88a033ca6e127e77be7871bc971a"
+    },
+    {
+      "id": "physical-go2",
+      "file": "media/hardware/physical-go2-locomotion.gif",
+      "sha256": "1e14ae6d80a5dcaa3762a3af0b06d58447ef8841ad5af31d0264bc02b6b5a33c",
+      "bytes": 7436739,
+      "width": 640,
+      "height": 360,
+      "frames": 60,
+      "duration_seconds": 6.0,
+      "frame_delays_ms": [
+        100
+      ],
+      "requested_fps": 10,
+      "source_id": "curated/deploy/deployed_test/blind_deploy.mp4",
+      "source_sha256": "833daafed54e654bbad8cb4247a36455582d75347aae1ffbb57effb61d55987f",
+      "source_excerpt_seconds": [
+        29,
+        35
+      ],
+      "medium": "hardware",
+      "policy_evidence": "Unverified checkpoint identity; do not label Foundation-02B or a training stage",
+      "publication_scope": "Owner states all first-party media and artifacts have approvals; no new content license assigned",
+      "caption": "Selected physical Go2 motion from an owner-approved recording. Checkpoint, command stream and run conditions are unverified; no hardware safety qualification is implied.",
+      "readme": true,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      }
+    },
+    {
+      "id": "historical-reference",
+      "file": "media/high-obstacle/historical-reference-stair-attempt.gif",
+      "sha256": "c6e2824bed799ef88b6a5b84e597ff4ce3724154a4ae6eebb2e7ee3cce370e30",
+      "bytes": 4049460,
+      "width": 640,
+      "height": 344,
+      "frames": 84,
+      "duration_seconds": 7.01,
+      "frame_delays_ms": [
+        80,
+        90
+      ],
+      "requested_fps": 12,
+      "source_id": "published-report/media/pretrained-reference-stair-attempt.mp4",
+      "source_sha256": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58",
+      "source_excerpt_seconds": [
+        46,
+        53
+      ],
+      "medium": "simulation",
+      "policy_evidence": "Author-identified historical Model5099 reference; not Adaptive-Frontier",
+      "publication_scope": "Previously published CC-BY-4.0 report media",
+      "caption": "Selected historical reference attempt, shown as independent qualitative context. Commands and recording conditions are not matched to the fixed-policy excerpt.",
+      "readme": false,
+      "processing": {
+        "cpu_ffmpeg": true,
+        "palette_colors": 128,
+        "dither": "sierra2_4a",
+        "speed_changed": false,
+        "frame_interpolation": false,
+        "cropped": false,
+        "audio_omitted": true,
+        "metadata_stripped": true
+      }
+    },
+    {
+      "id": "stair-still",
+      "file": "media/high-obstacle/stair-playback-still.png",
+      "sha256": "355e61e408d665f20d5c6785381895a3314e8918a3366d54b38f2c804d262744",
+      "bytes": 131896,
+      "width": 800,
+      "height": 429,
+      "source_id": "curated/sim/steps_28cms/steps_28cms.webm",
+      "source_sha256": "74e6168b9a43005163584fda3ec6c675891bb041334a85fa2b064a7647239115",
+      "source_time_seconds": 40,
+      "medium": "simulation",
+      "publication_scope": "report-derived CC-BY-4.0 media, resized source frame",
+      "processing": "CPU FFmpeg, 800 px width, no crop, metadata stripped",
+      "readme": false
+    },
+    {
+      "id": "historical-completion",
+      "file": "media/figures/historical-completion.png",
+      "sha256": "f9f19d3f473925ebac752b69cf9b7a7030264ed8e690cb0c897e493ba75ec17d",
+      "bytes": 55596,
+      "medium": "factual diagram",
+      "caption": "Factual redraw of published nominal benchmark counts; not robot imagery",
+      "readme": true,
+      "width": 1440,
+      "height": 576
+    },
+    {
+      "id": "conceptual-architecture",
+      "file": "media/figures/conceptual-architecture.svg",
+      "sha256": "4a0fce1bae0d89c7fafb404600dc7d732452baeefbf6d5839bb0753483e5b7ab",
+      "bytes": 2726,
+      "medium": "factual diagram",
+      "caption": "Conceptual diagram only; no specialized network internals",
+      "readme": true,
+      "width": 960,
+      "height": 350
+    }
+  ],
+  "discovery": {
+    "primary_media_files": 5,
+    "primary_images": 0,
+    "primary_sidecar_notes": 4,
+    "total_reviewed_media": 451,
+    "unique_media_hashes": 269,
+    "absolute_paths_and_unselected_media_inventory": "retained privately outside showcase"
+  },
+  "owner_approval": "Owner explicitly states approvals exist for all supplied first-party media and artifacts; no publication executed and no blanket license inferred",
+  "public_report_media_attribution": "Bhuvan Lakhera and Deepan Muthirayan, CC BY 4.0",
+  "published_sources": [
+    {
+      "document": "Technical report v1.1.0",
+      "url": "https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/TECHNICAL_REPORT.md",
+      "sha256": "661b0b44ba7d4363370730a2659d449280b85038fd6b0e5784757ad32bd8f347"
+    },
+    {
+      "document": "Published media provenance",
+      "url": "https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/MEDIA_UPDATE.json",
+      "sha256": "7b526283d08f3b637cc69c44def793349088588f519ae01a855c9b873376eeee"
+    }
+  ],
+  "approved_for_actuation": false
+}

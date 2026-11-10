@@ -1,0 +1,6 @@
+cohort,policy,completed,episodes
+combined_16_18_cm,Fixed sampling,117,128
+combined_16_18_cm,Adaptive sampling,47,128
+combined_16_18_cm,Historical reference,1,128
+isolated_18_cm,Fixed sampling,31,32
+staircase_18_cm,Fixed sampling,25,32

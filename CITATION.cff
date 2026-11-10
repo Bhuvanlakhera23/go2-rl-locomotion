@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying technical report. This results-only showcase has no software DOI."
+title: "Go2 RL Locomotion — Research Showcase"
+authors:
+  - family-names: Lakhera
+    given-names: Bhuvan
+  - family-names: Muthirayan
+    given-names: Deepan
+preferred-citation:
+  type: report
+  title: "Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning"
+  authors:
+    - family-names: Lakhera
+      given-names: Bhuvan
+    - family-names: Muthirayan
+      given-names: Deepan
+  year: 2026
+  version: 1.1.0
+  url: "https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/releases/tag/v1.1.0"
+  notes: "Technical report; no peer-reviewed publication claim."
