@@ -125,6 +125,14 @@ questions and hardware safety remain unresolved.
 
 ## Engineering and code
 
+[Robot Policy Tools](https://github.com/Bhuvanlakhera23/robot-policy-tools) is a separate,
+MIT-licensed software project for policy I/O validation and offline signal analysis.
+It **was not used to generate the original high-obstacle benchmark**.
+Inspect its [source](https://github.com/Bhuvanlakhera23/robot-policy-tools/tree/main/src/robot_policy_tools),
+[tests](https://github.com/Bhuvanlakhera23/robot-policy-tools/tree/main/tests),
+[synthetic example](https://github.com/Bhuvanlakhera23/robot-policy-tools/blob/main/examples/synthetic.py)
+and [passing CPU CI](https://github.com/Bhuvanlakhera23/robot-policy-tools/actions/runs/43023067171).
+
 This showcase is a research/engineering portfolio. Inspect the public
 [analysis scripts](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/tree/main/scripts)
 and [figure renderer](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/scripts/render_figures.py)
