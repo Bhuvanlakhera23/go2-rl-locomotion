@@ -9,7 +9,7 @@ maintained history and applied joint targets consistently. A policy can produce
 the expected numbers for a supplied tensor while the complete control loop still
 behaves poorly.
 
-The Foundation-02B export and MuJoCo investigation made this distinction concrete.
+The blind high-obstacle locomotion policy export and MuJoCo investigation made this distinction concrete.
 The numerical tests and the closed-loop test asked different questions. Their
 results remain separate: an initial export-parity failure, a later narrowly
 scoped parity pass, and a failed nominal walking qualification. None is a claim

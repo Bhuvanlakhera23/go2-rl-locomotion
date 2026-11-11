@@ -34,7 +34,7 @@ below the frozen 0.18 m minimum. The offline review found height oscillations,
 posture deterioration and substantial heading drift; no unique causal failure
 mechanism was established. It did not rerun the policy or relax the gate.
 An earlier unrelated MuJoCo recording found in the wider workspace is not evidence
-that this failed Foundation-02B run passed.
+that this failed high-obstacle-policy transfer run passed.
 
 ## Reproduction, disclosure and safety
 

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite Bhuvan Lakhera for this engineering showcase. For Foundation-02B research results, cite the two-author technical report under preferred-citation."
+message: "Cite Bhuvan Lakhera for this engineering showcase. For the obstacle-learning research results, cite the two-author technical report under preferred-citation."
 title: "Go2 RL Locomotion — Research Showcase"
 authors:
   - family-names: Lakhera

@@ -13,7 +13,7 @@ estimates. Those inputs are not added to the actor's deployed sensors.
 ## Building the training and evaluation workflow
 
 I developed the Isaac Lab workflow across flat-ground locomotion, rough terrain,
-generalist tasks and high-obstacle continuation. The later Foundation-02B study
+generalist tasks and high-obstacle continuation. The later obstacle-learning study
 changes how terrain-task exposure is allocated and measures both obstacle
 acquisition and ordinary locomotion. The technical report gives the published
 [methods and numerical comparison](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl).
@@ -31,5 +31,5 @@ depends on observation construction, simulation dynamics and control timing.
 
 I worked on joint mapping and position-target interfaces with Unitree SDK2 and
 CycloneDDS. The earlier 48-observation deployment stack and the later temporal
-Foundation-02B interface are distinct systems. Their results should not be
+high-obstacle policy interface are distinct systems. Their results should not be
 interchanged. See [runtime and safety limitations](limitations.md).

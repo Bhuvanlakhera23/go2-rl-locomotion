@@ -5,7 +5,7 @@ fixture table. No new evaluation, policy selection or data reduction was perform
 for the showcase. The small chart redraws the published counts without altering
 the axes or denominator; [benchmark-counts.csv](benchmark-counts.csv) contains its values.
 
-| Nominal fixture | Fixed sampling | Adaptive sampling | Pretrained reference |
+| Nominal fixture | Fixed-Mixture Policy | Adaptive-Frontier Policy | Pretrained Reference |
 |---|---:|---:|---:|
 | Isolated 16 cm | 30/32 | 22/32 | 1/32 |
 | Isolated 18 cm | 31/32 | 12/32 | 0/32 |
@@ -13,7 +13,8 @@ the axes or denominator; [benchmark-counts.csv](benchmark-counts.csv) contains i
 | Three-riser 18 cm | 25/32 | 1/32 | 0/32 |
 | **Combined 16–18 cm** | **117/128** | **47/128** | **1/128** |
 
-Fixed: 91.40625%; adaptive: 36.71875%; reference: 0.78125%.
+Fixed-Mixture Policy: 91.40625%; Adaptive-Frontier Policy: 36.71875%;
+Pretrained Reference: 0.78125%.
 The descriptive fixed–adaptive difference is 54.6875 percentage points. It is
 not a population-level estimate of which algorithm trains better.
 
