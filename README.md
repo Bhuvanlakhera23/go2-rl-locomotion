@@ -95,7 +95,7 @@ controller/checkpoint identities unverified; they add no benchmark episodes.
 </table>
 
 **[Open the complete demonstration gallery](docs/media-gallery.md)** — all
-**14 supplied gitmedia clips**, including the other panel and block takes,
+**14 supplied video recordings**, including the other panel and block takes,
 longer pad sequences and physical locomotion. Some clips share events; this is a
 recording collection, not 14 independent evaluation trials.
 
