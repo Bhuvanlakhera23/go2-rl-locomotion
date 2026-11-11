@@ -122,8 +122,16 @@ questions and hardware safety remain unresolved.
 [Detailed limitations, including the retained parity and MuJoCo results](docs/limitations.md).
 [Engineering case study: numerical parity and sim-to-sim transfer](docs/numerical-parity-and-sim-transfer.md).
 
-## Code availability
+## Engineering and code
 
-The complete training implementation and trained policies are not publicly
-distributed here. This repository focuses on demonstrations, measured results
-and research documentation. [Media attribution and rights](docs/rights.md).
+This showcase is a research/engineering portfolio. Inspect the public
+[analysis scripts](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/tree/main/scripts)
+and [figure renderer](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/scripts/render_figures.py)
+in the companion research repository. Its
+[reproduction guide](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/docs/REPRODUCIBILITY.md)
+explains CPU analysis and integrity checks. These scripts reproduce numerical
+analysis and figures, not PPO training or the original physics experiments.
+
+The complete high-obstacle controller, training implementation and trained
+policies remain private. No unfinished code candidate is linked as a public
+project. [Media attribution and rights](docs/rights.md).
