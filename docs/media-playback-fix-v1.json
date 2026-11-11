@@ -1,0 +1,328 @@
+{
+  "schema": "media-playback-fix-v1",
+  "base_commit": "2b95157faed874a919332733592ab394e7f8adbf",
+  "cause": "Published lighter README and gallery used static posters for many clips; existing GIF binaries were valid and infinitely looping.",
+  "new_previews": [
+    {
+      "file": "media/previews/physical-block-take-1.gif",
+      "source": "media/recordings/physical-block-take-1.mp4",
+      "source_sha256": "1cf96bb2deab90bc27483c3dd2d4aab7431f56f0d60a5eb33235f803807b412c",
+      "start_seconds": 5.06,
+      "duration_seconds": 4,
+      "fps": 10,
+      "width": 440,
+      "loop": 0,
+      "speed_changed": false,
+      "cropped": false,
+      "frame_interpolation": false,
+      "sha256": "60f267e3f4c9cf28d54a8b3844065718eb276b44a0e5198db5c23983afe24b30",
+      "command": [
+        "ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-threads",
+        "2",
+        "-ss",
+        "5.06",
+        "-i",
+        "media/recordings/physical-block-take-1.mp4",
+        "-t",
+        "4",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "fps=10,scale=440:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3",
+        "-map_metadata",
+        "-1",
+        "-loop",
+        "0",
+        "media/previews/physical-block-take-1.gif"
+      ]
+    },
+    {
+      "file": "media/previews/physical-block-take-3.gif",
+      "source": "media/recordings/physical-block-take-3.mp4",
+      "source_sha256": "b3bf3e0f4ded35b3b162adb89fbc36a6ea8aeaa495eda888dfbad3af0a63a85d",
+      "start_seconds": 2.74,
+      "duration_seconds": 4,
+      "fps": 10,
+      "width": 440,
+      "loop": 0,
+      "speed_changed": false,
+      "cropped": false,
+      "frame_interpolation": false,
+      "sha256": "b78ffd66bc23fe1d9b81e356da9a01a2356c27ce5ee018db055023b62f7dade5",
+      "command": [
+        "ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-threads",
+        "2",
+        "-ss",
+        "2.74",
+        "-i",
+        "media/recordings/physical-block-take-3.mp4",
+        "-t",
+        "4",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "fps=10,scale=440:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3",
+        "-map_metadata",
+        "-1",
+        "-loop",
+        "0",
+        "media/previews/physical-block-take-3.gif"
+      ]
+    },
+    {
+      "file": "media/previews/reflective-panel-take-3.gif",
+      "source": "media/recordings/reflective-panel-take-3.mp4",
+      "source_sha256": "4e02bfc752ce45552dfe39912c8d8a8b4f0395e4f260e9e7ee2108c466420f6b",
+      "start_seconds": 1.83,
+      "duration_seconds": 4,
+      "fps": 10,
+      "width": 440,
+      "loop": 0,
+      "speed_changed": false,
+      "cropped": false,
+      "frame_interpolation": false,
+      "sha256": "9ce78fbf86180bf549eecfaf3aa3466aaec6b8a97d30722ec2a0a513e4d355e5",
+      "command": [
+        "ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-threads",
+        "2",
+        "-ss",
+        "1.83",
+        "-i",
+        "media/recordings/reflective-panel-take-3.mp4",
+        "-t",
+        "4",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "fps=10,scale=440:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3",
+        "-map_metadata",
+        "-1",
+        "-loop",
+        "0",
+        "media/previews/reflective-panel-take-3.gif"
+      ]
+    },
+    {
+      "file": "media/previews/foam-pad-sequence-1.gif",
+      "source": "media/recordings/foam-pad-sequence-1.mp4",
+      "source_sha256": "0b2ac491f49a6c7372bb6f33d379507490cd4b31c80cb41ffaaeb84b5bbbd380",
+      "start_seconds": 8.04,
+      "duration_seconds": 4,
+      "fps": 10,
+      "width": 440,
+      "loop": 0,
+      "speed_changed": false,
+      "cropped": false,
+      "frame_interpolation": false,
+      "sha256": "36ddbfeea10d89f974a15567ed557cf5295db0d68b8c922d3266f7ddb73dc0db",
+      "command": [
+        "ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-threads",
+        "2",
+        "-ss",
+        "8.04",
+        "-i",
+        "media/recordings/foam-pad-sequence-1.mp4",
+        "-t",
+        "4",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "fps=10,scale=440:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3",
+        "-map_metadata",
+        "-1",
+        "-loop",
+        "0",
+        "media/previews/foam-pad-sequence-1.gif"
+      ]
+    }
+  ],
+  "approved_for_actuation": false,
+  "verification": {
+    "status": "PASS",
+    "gifs_checked": 17,
+    "all_original_files_except_two_pages_preserved": true,
+    "pages": {
+      "README.md": {
+        "animated_previews": 9,
+        "static_demonstration_posters": 0
+      },
+      "docs/media-gallery.md": {
+        "animated_previews": 15,
+        "static_demonstration_posters": 0
+      }
+    },
+    "files": [
+      {
+        "file": "media/hardware/emergent-recovery-attempt.gif",
+        "frames": 56,
+        "distinct_decoded_frames": 56,
+        "loop": 0,
+        "duration_ms": 3720,
+        "minimum_frame_delay_ms": 60,
+        "sha256": "e066dd84e9b34e006b417fb2eff2d99f0edb2468cffc407523b3827ab54a2cb0"
+      },
+      {
+        "file": "media/hardware/physical-block-alternate-pass.gif",
+        "frames": 48,
+        "distinct_decoded_frames": 48,
+        "loop": 0,
+        "duration_ms": 3190,
+        "minimum_frame_delay_ms": 60,
+        "sha256": "19ec3d0292fc545df2f0ae0710e6a19c8a99433130e6910aba2aa484923780ff"
+      },
+      {
+        "file": "media/hardware/physical-go2-locomotion.gif",
+        "frames": 60,
+        "distinct_decoded_frames": 60,
+        "loop": 0,
+        "duration_ms": 6000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "e24ad0d5752e40322b9282edc3ac0008a5d862b8dd33fc31cef25491af877e35"
+      },
+      {
+        "file": "media/hardware/physical-pad-course.gif",
+        "frames": 40,
+        "distinct_decoded_frames": 40,
+        "loop": 0,
+        "duration_ms": 4000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "dd17adc2ed8d1311c2b931f5b3c8ca548401a74b709ddf2721b595878653995f"
+      },
+      {
+        "file": "media/hardware/physical-reflective-panel.gif",
+        "frames": 60,
+        "distinct_decoded_frames": 60,
+        "loop": 0,
+        "duration_ms": 6000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "57adaa1ffb64820bee211d0749ae61dd98a4c4827fe86cc842eca414743234f5"
+      },
+      {
+        "file": "media/hero/fixed-policy-stair-demonstration.gif",
+        "frames": 70,
+        "distinct_decoded_frames": 70,
+        "loop": 0,
+        "duration_ms": 7000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "5e14f4de7439f757c70619229dbd37a991cbf3c0ad8277d3db3ffceced660ada"
+      },
+      {
+        "file": "media/high-obstacle/historical-reference-stair-attempt.gif",
+        "frames": 70,
+        "distinct_decoded_frames": 70,
+        "loop": 0,
+        "duration_ms": 7000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "4d86e634fa7eb9278ec5b1f671ec2b3ece9be3c373d51fa5f1122ada25c8f45e"
+      },
+      {
+        "file": "media/high-obstacle/separate-block-playback.gif",
+        "frames": 70,
+        "distinct_decoded_frames": 70,
+        "loop": 0,
+        "duration_ms": 7000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "6493414e28d4f1495ca61a957b6b2d3d39ab3cd152076de9e55160d526e26569"
+      },
+      {
+        "file": "media/previews/foam-pad-sequence-1.gif",
+        "frames": 40,
+        "distinct_decoded_frames": 40,
+        "loop": 0,
+        "duration_ms": 4000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "36ddbfeea10d89f974a15567ed557cf5295db0d68b8c922d3266f7ddb73dc0db"
+      },
+      {
+        "file": "media/previews/physical-block-take-1.gif",
+        "frames": 40,
+        "distinct_decoded_frames": 40,
+        "loop": 0,
+        "duration_ms": 4000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "60f267e3f4c9cf28d54a8b3844065718eb276b44a0e5198db5c23983afe24b30"
+      },
+      {
+        "file": "media/previews/physical-block-take-3.gif",
+        "frames": 40,
+        "distinct_decoded_frames": 40,
+        "loop": 0,
+        "duration_ms": 4000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "b78ffd66bc23fe1d9b81e356da9a01a2356c27ce5ee018db055023b62f7dade5"
+      },
+      {
+        "file": "media/previews/physical-block.gif",
+        "frames": 48,
+        "distinct_decoded_frames": 48,
+        "loop": 0,
+        "duration_ms": 3190,
+        "minimum_frame_delay_ms": 60,
+        "sha256": "1c5ea61b00a35b304b2174c4e58a530755968ca1b4b85ae1bacdf81110721390"
+      },
+      {
+        "file": "media/previews/reflective-panel-take-2.gif",
+        "frames": 50,
+        "distinct_decoded_frames": 50,
+        "loop": 0,
+        "duration_ms": 5000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "93f468b7b45739d787dae487ab9c0a0f21e1be39d9f87cdda1b4e4b505ac7690"
+      },
+      {
+        "file": "media/previews/reflective-panel-take-3.gif",
+        "frames": 40,
+        "distinct_decoded_frames": 40,
+        "loop": 0,
+        "duration_ms": 4000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "9ce78fbf86180bf549eecfaf3aa3466aaec6b8a97d30722ec2a0a513e4d355e5"
+      },
+      {
+        "file": "media/previews/support-loss.gif",
+        "frames": 56,
+        "distinct_decoded_frames": 56,
+        "loop": 0,
+        "duration_ms": 3740,
+        "minimum_frame_delay_ms": 60,
+        "sha256": "ba377e1ce9ece2a18270b5967090983473968bddfbfdf2d7fd544f42282c8efd"
+      },
+      {
+        "file": "media/rough/fixed-policy-friction-tiles.gif",
+        "frames": 70,
+        "distinct_decoded_frames": 70,
+        "loop": 0,
+        "duration_ms": 7000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "47a24395e50ddb8786c620e5f5604718ff1ce0ef1238181b3bb5b731048982b6"
+      },
+      {
+        "file": "media/rough/fixed-policy-rocky-trail.gif",
+        "frames": 70,
+        "distinct_decoded_frames": 70,
+        "loop": 0,
+        "duration_ms": 7000,
+        "minimum_frame_delay_ms": 100,
+        "sha256": "4ffdc324bad4d851bbd3499841e46bffae355c34520dd46e1632fad6182e16b4"
+      }
+    ],
+    "browser_autoplay_limitation": "GitHub/user reduced-motion settings can pause otherwise valid animations; website playback not forced.",
+    "published": false
+  }
+}

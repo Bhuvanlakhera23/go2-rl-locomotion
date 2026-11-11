@@ -1,10 +1,15 @@
 # Demonstration gallery
 
 **14 supplied recordings: 4 simulation clips and 10 physical clips.**
-Click a preview to open the silent, full supplied video. Every original visible
+Every recording has a looping animated excerpt. Click a preview to open the
+silent, full supplied video. Every original visible
 frame is retained in those MP4s. Existing split-screen layouts, tethers and
 handlers are preserved. The short animated previews on the [main page](../README.md)
 are selected excerpts; the videos here keep the longer context.
+
+**Preview paused?** In [GitHub accessibility settings](https://github.com/settings/accessibility),
+set **Autoplay animated images → Enabled**, or open the linked MP4. GitHub may
+otherwise follow your system’s reduced-motion preference.
 
 [Simulation](#simulation) · [Block course](#physical-block-course) ·
 [Panel tests](#reflective-panel-tests) · [Pad courses](#foam-pad-courses) ·
@@ -18,8 +23,8 @@ identify a policy trained using a fixed task mixture. These are demonstrations,
 not additional scored episodes.
 
 <table>
-<tr><td width="50%"><a href="../media/recordings/staircase-playback.mp4"><img src="../media/recordings/staircase-playback.jpg" width="440" alt="Blind high-obstacle locomotion policy in the configured stair scene"></a><br><strong>Staircase playback</strong><br>Configured 28 cm scene in the recording notes; qualitative playback.<br><a href="../media/recordings/staircase-playback.mp4">Watch / download MP4 · 111.30 s</a></td><td width="50%"><a href="../media/recordings/rocky-stairs.mp4"><img src="../media/recordings/rocky-stairs.jpg" width="440" alt="Blind high-obstacle locomotion policy on rocky stairs"></a><br><strong>Rocky stairs</strong><br>Irregular stairs, uneven treads and surface relief.<br><a href="../media/recordings/rocky-stairs.mp4">Watch / download MP4 · 93.02 s</a></td></tr>
-<tr><td width="50%"><a href="../media/recordings/friction-tiles.mp4"><img src="../media/recordings/friction-tiles.jpg" width="440" alt="Blind high-obstacle locomotion policy on random-friction tiles"></a><br><strong>Friction-tile field</strong><br>Tiles with independently varied friction in the recording notes.<br><a href="../media/recordings/friction-tiles.mp4">Watch / download MP4 · 53.86 s</a></td><td width="50%"><a href="../media/recordings/separate-block-course.mp4"><img src="../media/recordings/separate-block-course.jpg" width="440" alt="Blind high-obstacle locomotion policy on separated blocks"></a><br><strong>Separate-block course</strong><br>Blocks return to ground between obstacles; not a cumulative staircase.<br><a href="../media/recordings/separate-block-course.mp4">Watch / download MP4 · 43.41 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/staircase-playback.mp4"><img src="../media/hero/fixed-policy-stair-demonstration.gif" width="440" alt="Blind high-obstacle locomotion policy in the configured stair scene"></a><br><strong>Staircase playback</strong><br>Configured 28 cm scene in the recording notes; qualitative playback.<br><a href="../media/recordings/staircase-playback.mp4">Watch / download MP4 · 111.30 s</a></td><td width="50%"><a href="../media/recordings/rocky-stairs.mp4"><img src="../media/rough/fixed-policy-rocky-trail.gif" width="440" alt="Blind high-obstacle locomotion policy on rocky stairs"></a><br><strong>Rocky stairs</strong><br>Irregular stairs, uneven treads and surface relief.<br><a href="../media/recordings/rocky-stairs.mp4">Watch / download MP4 · 93.02 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/friction-tiles.mp4"><img src="../media/rough/fixed-policy-friction-tiles.gif" width="440" alt="Blind high-obstacle locomotion policy on random-friction tiles"></a><br><strong>Friction-tile field</strong><br>Tiles with independently varied friction in the recording notes.<br><a href="../media/recordings/friction-tiles.mp4">Watch / download MP4 · 53.86 s</a></td><td width="50%"><a href="../media/recordings/separate-block-course.mp4"><img src="../media/high-obstacle/separate-block-playback.gif" width="440" alt="Blind high-obstacle locomotion policy on separated blocks"></a><br><strong>Separate-block course</strong><br>Blocks return to ground between obstacles; not a cumulative staircase.<br><a href="../media/recordings/separate-block-course.mp4">Watch / download MP4 · 43.41 s</a></td></tr>
 </table>
 
 ## Physical block course
@@ -29,8 +34,8 @@ All three supplied block-course takes are available. The folder is labeled
 from that label. The main-page excerpt comes from take 2.
 
 <table>
-<tr><td width="50%"><a href="../media/recordings/physical-block-take-1.mp4"><img src="../media/recordings/physical-block-take-1.jpg" width="440" alt="Physical block course, take 1"></a><br><strong>Block course · take 1</strong><br>Repeated approaches with tether and handler visible.<br><a href="../media/recordings/physical-block-take-1.mp4">Watch / download MP4 · 56.66 s</a></td><td width="50%"><a href="../media/recordings/physical-block-take-2.mp4"><img src="../media/recordings/physical-block-take-2.jpg" width="440" alt="Physical block course, take 2"></a><br><strong>Block course · take 2</strong><br>The complete supplied recording behind the main-page block preview.<br><a href="../media/recordings/physical-block-take-2.mp4">Watch / download MP4 · 83.84 s</a></td></tr>
-<tr><td width="50%"><a href="../media/recordings/physical-block-take-3.mp4"><img src="../media/recordings/physical-block-take-3.jpg" width="440" alt="Physical block course, take 3"></a><br><strong>Block course · take 3</strong><br>Another supplied sequence of approaches and crossings.<br><a href="../media/recordings/physical-block-take-3.mp4">Watch / download MP4 · 38.08 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/physical-block-take-1.mp4"><img src="../media/previews/physical-block-take-1.gif" width="440" alt="Physical block course, take 1"></a><br><strong>Block course · take 1</strong><br>Repeated approaches with tether and handler visible.<br><a href="../media/recordings/physical-block-take-1.mp4">Watch / download MP4 · 56.66 s</a></td><td width="50%"><a href="../media/recordings/physical-block-take-2.mp4"><img src="../media/previews/physical-block.gif" width="440" alt="Physical block course, take 2"></a><br><strong>Block course · take 2</strong><br>The complete supplied recording behind the main-page block preview.<br><a href="../media/recordings/physical-block-take-2.mp4">Watch / download MP4 · 83.84 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/physical-block-take-3.mp4"><img src="../media/previews/physical-block-take-3.gif" width="440" alt="Physical block course, take 3"></a><br><strong>Block course · take 3</strong><br>Another supplied sequence of approaches and crossings.<br><a href="../media/recordings/physical-block-take-3.mp4">Watch / download MP4 · 38.08 s</a></td></tr>
 </table>
 
 ## Reflective-panel tests
@@ -40,8 +45,8 @@ The surface appears reflective; these clips do not establish a friction coeffici
 or a slippery-surface success rate.
 
 <table>
-<tr><td width="50%"><a href="../media/recordings/reflective-panel-take-1.mp4"><img src="../media/recordings/reflective-panel-take-1.jpg" width="440" alt="Reflective-panel test, take 1"></a><br><strong>Reflective panel · take 1</strong><br>The take used in the earlier gallery excerpt.<br><a href="../media/recordings/reflective-panel-take-1.mp4">Watch / download MP4 · 11.90 s</a></td><td width="50%"><a href="../media/recordings/reflective-panel-take-2.mp4"><img src="../media/recordings/reflective-panel-take-2.jpg" width="440" alt="Reflective-panel test, take 2"></a><br><strong>Reflective panel · take 2</strong><br>Additional crossing sequence, now also previewed on the main page.<br><a href="../media/recordings/reflective-panel-take-2.mp4">Watch / download MP4 · 14.30 s</a></td></tr>
-<tr><td width="50%"><a href="../media/recordings/reflective-panel-take-3.mp4"><img src="../media/recordings/reflective-panel-take-3.jpg" width="440" alt="Reflective-panel test, take 3"></a><br><strong>Reflective panel · take 3</strong><br>The third supplied take, retained in full.<br><a href="../media/recordings/reflective-panel-take-3.mp4">Watch / download MP4 · 7.85 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/reflective-panel-take-1.mp4"><img src="../media/hardware/physical-reflective-panel.gif" width="440" alt="Reflective-panel test, take 1"></a><br><strong>Reflective panel · take 1</strong><br>The take used in the earlier gallery excerpt.<br><a href="../media/recordings/reflective-panel-take-1.mp4">Watch / download MP4 · 11.90 s</a></td><td width="50%"><a href="../media/recordings/reflective-panel-take-2.mp4"><img src="../media/previews/reflective-panel-take-2.gif" width="440" alt="Reflective-panel test, take 2"></a><br><strong>Reflective panel · take 2</strong><br>Additional crossing sequence, now also previewed on the main page.<br><a href="../media/recordings/reflective-panel-take-2.mp4">Watch / download MP4 · 14.30 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/reflective-panel-take-3.mp4"><img src="../media/previews/reflective-panel-take-3.gif" width="440" alt="Reflective-panel test, take 3"></a><br><strong>Reflective panel · take 3</strong><br>The third supplied take, retained in full.<br><a href="../media/recordings/reflective-panel-take-3.mp4">Watch / download MP4 · 7.85 s</a></td></tr>
 </table>
 
 ## Foam-pad courses
@@ -50,7 +55,7 @@ Longer sequences show the movable pads and repeated approaches, rather than just
 one pass. They include unsuccessful behavior; sequence 1 contains a fall.
 
 <table>
-<tr><td width="50%"><a href="../media/recordings/foam-pad-sequence-2.mp4"><img src="../media/recordings/foam-pad-sequence-2.jpg" width="440" alt="Foam-pad course with repeated approaches"></a><br><strong>Pad course · sequence 2</strong><br>The complete supplied recording behind the main-page pad preview.<br><a href="../media/recordings/foam-pad-sequence-2.mp4">Watch / download MP4 · 56.80 s</a></td><td width="50%"><a href="../media/recordings/foam-pad-sequence-1.mp4"><img src="../media/recordings/foam-pad-sequence-1.jpg" width="440" alt="Additional foam-pad sequence, including a fall"></a><br><strong>Pad course · sequence 1</strong><br>Additional sequence, including loss of footing and a fall.<br><a href="../media/recordings/foam-pad-sequence-1.mp4">Watch / download MP4 · 80.50 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/foam-pad-sequence-2.mp4"><img src="../media/hardware/physical-pad-course.gif" width="440" alt="Foam-pad course with repeated approaches"></a><br><strong>Pad course · sequence 2</strong><br>The complete supplied recording behind the main-page pad preview.<br><a href="../media/recordings/foam-pad-sequence-2.mp4">Watch / download MP4 · 56.80 s</a></td><td width="50%"><a href="../media/recordings/foam-pad-sequence-1.mp4"><img src="../media/previews/foam-pad-sequence-1.gif" width="440" alt="Additional foam-pad sequence, including a fall"></a><br><strong>Pad course · sequence 1</strong><br>Additional sequence, including loss of footing and a fall.<br><a href="../media/recordings/foam-pad-sequence-1.mp4">Watch / download MP4 · 80.50 s</a></td></tr>
 </table>
 
 <a id="behavior-after-loss-of-support"></a>
@@ -68,7 +73,7 @@ the shorter audio/container tail is omitted from the silent copy.
 
 ## Physical locomotion
 
-<a href="../media/recordings/physical-locomotion.mp4"><img src="../media/recordings/physical-locomotion.jpg" width="440" alt="Physical Go2 locomotion recording"></a><br><strong>Physical Go2 locomotion</strong><br>The supplied locomotion recording, now available beyond the original short GIF.<br><a href="../media/recordings/physical-locomotion.mp4">Watch / download MP4 · 43.47 s</a>
+<a href="../media/recordings/physical-locomotion.mp4"><img src="../media/hardware/physical-go2-locomotion.gif" width="440" alt="Physical Go2 locomotion recording"></a><br><strong>Physical Go2 locomotion</strong><br>The supplied locomotion recording, now available beyond the original short GIF.<br><a href="../media/recordings/physical-locomotion.mp4">Watch / download MP4 · 43.47 s</a>
 
 <a id="historical-reference"></a>
 
@@ -98,7 +103,8 @@ This reference is separate from the 14 supplied gitmedia clips above.
 - Earlier short GIFs and their [historical provenance](media-provenance.json) and
   [encoding record](media-optimization-v1.json) are unchanged. Historical
   filenames/identifiers remain in those records. New compact previews are
-  documented in [preview provenance](media-preview-expansion-v1.json).
+  documented in [preview provenance](media-preview-expansion-v1.json). The four newly animated
+  gallery excerpts are documented in [playback fix provenance](media-playback-fix-v1.json).
 
 [Original measured results](results.md) · [Scope and negative results](limitations.md) ·
 [Experimental provenance](experimental-provenance.md) · [Media attribution](rights.md).
