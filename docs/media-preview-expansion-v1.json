@@ -1,0 +1,56 @@
+{
+  "schema": "showcase-preview-expansion-v1",
+  "assets": [
+    {
+      "file": "media/previews/physical-block.gif",
+      "kind": "existing_gif",
+      "origin": "clip08",
+      "width": 480,
+      "height": 270,
+      "frames": 48,
+      "duration_seconds": 3.19,
+      "bytes": 2678658,
+      "sha256": "1c5ea61b00a35b304b2174c4e58a530755968ca1b4b85ae1bacdf81110721390",
+      "source_sha256": "19ec3d0292fc545df2f0ae0710e6a19c8a99433130e6910aba2aa484923780ff",
+      "speed_changed": false,
+      "cropped": false,
+      "source_gif_duration_seconds": 3.19,
+      "duration_rounding_seconds": 0.0,
+      "timing_note": "Resizing retains every existing preview frame; GIF display delay rounds to hundredths of a second."
+    },
+    {
+      "file": "media/previews/support-loss.gif",
+      "kind": "existing_gif",
+      "origin": "clip01",
+      "width": 480,
+      "height": 270,
+      "frames": 56,
+      "duration_seconds": 3.74,
+      "bytes": 3320089,
+      "sha256": "ba377e1ce9ece2a18270b5967090983473968bddfbfdf2d7fd544f42282c8efd",
+      "source_sha256": "e066dd84e9b34e006b417fb2eff2d99f0edb2468cffc407523b3827ab54a2cb0",
+      "speed_changed": false,
+      "cropped": false,
+      "source_gif_duration_seconds": 3.72,
+      "duration_rounding_seconds": 0.02,
+      "timing_note": "Resizing retains every existing preview frame; GIF display delay rounds to hundredths of a second."
+    },
+    {
+      "file": "media/previews/reflective-panel-take-2.gif",
+      "kind": "source_excerpt",
+      "origin": "clip05",
+      "start": 3.4,
+      "duration": 5.0,
+      "width": 480,
+      "height": 270,
+      "frames": 50,
+      "duration_seconds": 5.0,
+      "bytes": 2194475,
+      "sha256": "93f468b7b45739d787dae487ab9c0a0f21e1be39d9f87cdda1b4e4b505ac7690",
+      "source_sha256": "5dc15ae6ce827a3fe7afff24dab1e787d542cbe57769cc2bcf2b3bcaea95e0c2",
+      "speed_changed": false,
+      "cropped": false
+    }
+  ],
+  "approved_for_actuation": false
+}

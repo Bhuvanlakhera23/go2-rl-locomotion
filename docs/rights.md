@@ -27,3 +27,17 @@ private source/configurations, SDK/controller code, detector implementation and
 robot assets remain excluded. Permissions for new material must be established
 before future disclosure. Existing permission statements are not an independent
 legal determination. **approved_for_actuation: false**.
+
+## Expanded recording collection
+
+The 14 silent video derivatives and authentic poster frames in `media/recordings/`
+come from the supplied gitmedia collection. Permission for all supplied media and
+artifacts was explicitly confirmed before this expansion. Other simulation and
+physical recordings retain the first-party inclusion terms above; no new blanket
+reuse license is assigned. The report-derived stair recording and its poster
+retain CC BY 4.0 attribution to Bhuvan Lakhera and Deepan Muthirayan.
+
+New previews are resized existing approved excerpts or an identified continuous
+excerpt of an additional panel take. No source recording, old media manifest or
+existing GIF was overwritten. [Full-video identities](media-expansion-v1.json) ·
+[New-preview identities](media-preview-expansion-v1.json).

@@ -1,156 +1,106 @@
 # Demonstration gallery
 
-These are **selected demonstrations**, not complete evaluation timelines. Each
-loop is a single continuous source excerpt at its original timeline speed; loops
-return to the beginning. Original source hashes and excerpt positions are in the unchanged
-[historical manifest](media-provenance.json); current GIF identities and encoding
-results are in [optimization provenance](media-optimization-v1.json).
+**14 supplied recordings: 4 simulation clips and 10 physical clips.**
+Click a preview to open the silent, full supplied video. Every original visible
+frame is retained in those MP4s. Existing split-screen layouts, tethers and
+handlers are preserved. The short animated previews on the [main page](../README.md)
+are selected excerpts; the videos here keep the longer context.
 
-## Stairs · blind high-obstacle locomotion policy
+[Simulation](#simulation) · [Block course](#physical-block-course) ·
+[Panel tests](#reflective-panel-tests) · [Pad courses](#foam-pad-courses) ·
+[Support-loss response](#behavior-after-loss-of-support) ·
+[Physical locomotion](#physical-locomotion) · [Recording context](#recording-context)
 
-![Blind high-obstacle locomotion policy climbing stairs](../media/hero/fixed-policy-stair-demonstration.gif)
+## Simulation
 
-Original 34–41 s excerpt. The exact original WebM hash matches the previously
-approved report-media source. The public report identifies the demonstrated policy as trained using a fixed
-task mixture, based on my identification, not checkpoint-to-video cryptographic proof. The described
-28 cm setting is qualitative; it is not a measured supported-traversal benchmark.
+The blind high-obstacle locomotion policy in four settings. Recording notes
+identify a policy trained using a fixed task mixture. These are demonstrations,
+not additional scored episodes.
 
-[Previously published full recording](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/media/fixed-mixture-stair-climb.mp4) ·
-[Public media provenance and attribution](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/media/README.md).
-The full recording was separately converted for the existing public report; it
-is not included in this repository. Its current binary playback availability
-could not be rechecked from this environment.
+<table>
+<tr><td width="50%"><a href="../media/recordings/staircase-playback.mp4"><img src="../media/recordings/staircase-playback.jpg" width="440" alt="Blind high-obstacle locomotion policy in the configured stair scene"></a><br><strong>Staircase playback</strong><br>Configured 28 cm scene in the recording notes; qualitative playback.<br><a href="../media/recordings/staircase-playback.mp4">Watch / download MP4 · 111.30 s</a></td><td width="50%"><a href="../media/recordings/rocky-stairs.mp4"><img src="../media/recordings/rocky-stairs.jpg" width="440" alt="Blind high-obstacle locomotion policy on rocky stairs"></a><br><strong>Rocky stairs</strong><br>Irregular stairs, uneven treads and surface relief.<br><a href="../media/recordings/rocky-stairs.mp4">Watch / download MP4 · 93.02 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/friction-tiles.mp4"><img src="../media/recordings/friction-tiles.jpg" width="440" alt="Blind high-obstacle locomotion policy on random-friction tiles"></a><br><strong>Friction-tile field</strong><br>Tiles with independently varied friction in the recording notes.<br><a href="../media/recordings/friction-tiles.mp4">Watch / download MP4 · 53.86 s</a></td><td width="50%"><a href="../media/recordings/separate-block-course.mp4"><img src="../media/recordings/separate-block-course.jpg" width="440" alt="Blind high-obstacle locomotion policy on separated blocks"></a><br><strong>Separate-block course</strong><br>Blocks return to ground between obstacles; not a cumulative staircase.<br><a href="../media/recordings/separate-block-course.mp4">Watch / download MP4 · 43.41 s</a></td></tr>
+</table>
 
-![Authentic stair-playback still at source time 40 seconds](../media/high-obstacle/stair-playback-still.png)
+## Physical block course
 
-A resized, uncropped source frame at 40 s. It is not a generated robot image or
-a contact/traversal adjudication.
+All three supplied block-course takes are available. The folder is labeled
+15.5 cm, but no calibrated obstacle measurement or checkpoint identity is inferred
+from that label. The main-page excerpt comes from take 2.
 
-## Separate-block course · simulation
+<table>
+<tr><td width="50%"><a href="../media/recordings/physical-block-take-1.mp4"><img src="../media/recordings/physical-block-take-1.jpg" width="440" alt="Physical block course, take 1"></a><br><strong>Block course · take 1</strong><br>Repeated approaches with tether and handler visible.<br><a href="../media/recordings/physical-block-take-1.mp4">Watch / download MP4 · 56.66 s</a></td><td width="50%"><a href="../media/recordings/physical-block-take-2.mp4"><img src="../media/recordings/physical-block-take-2.jpg" width="440" alt="Physical block course, take 2"></a><br><strong>Block course · take 2</strong><br>The complete supplied recording behind the main-page block preview.<br><a href="../media/recordings/physical-block-take-2.mp4">Watch / download MP4 · 83.84 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/physical-block-take-3.mp4"><img src="../media/recordings/physical-block-take-3.jpg" width="440" alt="Physical block course, take 3"></a><br><strong>Block course · take 3</strong><br>Another supplied sequence of approaches and crossings.<br><a href="../media/recordings/physical-block-take-3.mp4">Watch / download MP4 · 38.08 s</a></td></tr>
+</table>
 
-![Selected separate-block playback](../media/high-obstacle/separate-block-playback.gif)
+## Reflective-panel tests
 
-Original 5–12 s excerpt. My recording notes identify the blind high-obstacle locomotion policy endpoint
-and describe increasing nominal obstacle heights, with ground between blocks.
-Terminations were disabled: this is exploratory playback, not a scored run.
-Exact scene-to-video and checkpoint-to-video binding are unverified.
-The complete recording is not hosted in this repository.
+Three separate supplied takes, preserving their original split-screen layouts.
+The surface appears reflective; these clips do not establish a friction coefficient
+or a slippery-surface success rate.
 
-## Rocky trail · simulation
+<table>
+<tr><td width="50%"><a href="../media/recordings/reflective-panel-take-1.mp4"><img src="../media/recordings/reflective-panel-take-1.jpg" width="440" alt="Reflective-panel test, take 1"></a><br><strong>Reflective panel · take 1</strong><br>The take used in the earlier gallery excerpt.<br><a href="../media/recordings/reflective-panel-take-1.mp4">Watch / download MP4 · 11.90 s</a></td><td width="50%"><a href="../media/recordings/reflective-panel-take-2.mp4"><img src="../media/recordings/reflective-panel-take-2.jpg" width="440" alt="Reflective-panel test, take 2"></a><br><strong>Reflective panel · take 2</strong><br>Additional crossing sequence, now also previewed on the main page.<br><a href="../media/recordings/reflective-panel-take-2.mp4">Watch / download MP4 · 14.30 s</a></td></tr>
+<tr><td width="50%"><a href="../media/recordings/reflective-panel-take-3.mp4"><img src="../media/recordings/reflective-panel-take-3.jpg" width="440" alt="Reflective-panel test, take 3"></a><br><strong>Reflective panel · take 3</strong><br>The third supplied take, retained in full.<br><a href="../media/recordings/reflective-panel-take-3.mp4">Watch / download MP4 · 7.85 s</a></td></tr>
+</table>
 
-![Blind high-obstacle locomotion policy on a rocky trail](../media/rough/fixed-policy-rocky-trail.gif)
+## Foam-pad courses
 
-Original 12–19 s excerpt. My recording notes describe variable stair dimensions, local
-surface relief and teleoperation. Those notes are setup descriptions, not
-measurements of the visible obstacle at each frame. This is later blind high-obstacle locomotion policy
-footage, not proof of an earlier Stage 2 or generalist checkpoint.
-The complete recording is not hosted here.
+Longer sequences show the movable pads and repeated approaches, rather than just
+one pass. They include unsuccessful behavior; sequence 1 contains a fall.
 
-## Friction tiles · simulation
+<table>
+<tr><td width="50%"><a href="../media/recordings/foam-pad-sequence-2.mp4"><img src="../media/recordings/foam-pad-sequence-2.jpg" width="440" alt="Foam-pad course with repeated approaches"></a><br><strong>Pad course · sequence 2</strong><br>The complete supplied recording behind the main-page pad preview.<br><a href="../media/recordings/foam-pad-sequence-2.mp4">Watch / download MP4 · 56.80 s</a></td><td width="50%"><a href="../media/recordings/foam-pad-sequence-1.mp4"><img src="../media/recordings/foam-pad-sequence-1.jpg" width="440" alt="Additional foam-pad sequence, including a fall"></a><br><strong>Pad course · sequence 1</strong><br>Additional sequence, including loss of footing and a fall.<br><a href="../media/recordings/foam-pad-sequence-1.mp4">Watch / download MP4 · 80.50 s</a></td></tr>
+</table>
 
-![Blind high-obstacle locomotion policy on friction tiles](../media/rough/fixed-policy-friction-tiles.gif)
+<a id="behavior-after-loss-of-support"></a>
 
-Original 5–12 s excerpt. My recording notes describe independently randomized friction
-tiles and hardware-derived observation-noise approximations. Such noise does not
-reproduce hardware latency, actuator dynamics or contact mechanics. No measured
-friction-robustness success rate follows from this clip. The complete recording is not hosted here.
+## Behavior after loss of support
+
+[![Complete supplied support-loss response](../media/previews/support-loss.gif)](../media/recordings/behavior-after-support-loss.mp4)
+
+The robot continues active leg/body motion after losing support, but does not
+self-right before the clip ends. This is interesting behavior to inspect, not a
+successful recovery claim. The supplied visual sequence is retained in full;
+the shorter audio/container tail is omitted from the silent copy.
+
+[Watch / download the complete supplied clip](../media/recordings/behavior-after-support-loss.mp4).
+
+## Physical locomotion
+
+<a href="../media/recordings/physical-locomotion.mp4"><img src="../media/recordings/physical-locomotion.jpg" width="440" alt="Physical Go2 locomotion recording"></a><br><strong>Physical Go2 locomotion</strong><br>The supplied locomotion recording, now available beyond the original short GIF.<br><a href="../media/recordings/physical-locomotion.mp4">Watch / download MP4 · 43.47 s</a>
 
 <a id="historical-reference"></a>
 
-## Historical reference attempt · independent qualitative context
+## Historical reference
 
-![Selected historical reference stair attempt](../media/high-obstacle/historical-reference-stair-attempt.gif)
+[![Historical reference attempting stairs](../media/high-obstacle/historical-reference-stair-attempt.gif)](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/media/pretrained-reference-stair-attempt.mp4)
 
-Original 46–53 s excerpt from the previously published historical reference
-recording. The reference is identified by me as Model5099, **not the Adaptive-Frontier Policy**. It is not a matched-command or matched-condition counterpart to
-the blind high-obstacle locomotion policy GIF, and is not presented as a full evaluation or failure rate.
-
+The Model5099 reference is qualitative context for the climbing playback, not the
+Adaptive-Frontier Policy or a matched-command video comparison.
 [Previously published complete reference recording](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/blob/main/media/pretrained-reference-stair-attempt.mp4).
-Its current binary playback availability was not independently rechecked.
+This reference is separate from the 14 supplied gitmedia clips above.
 
-## Physical Go2
+## Recording context
 
-### Physical block playback · added recording
+- MP4s retain the full **supplied visual timeline** at its original speed. Several
+  source files were already trimmed or split-screen edited; this does not recover
+  an original camera master or establish synchronization between views.
+- Full videos are silent, resized H.264 copies for browser compatibility. No frame
+  interpolation, view compositing, invented motion or new policy execution was
+  used. Source and derivative identities are in the [expansion manifest](media-expansion-v1.json).
+- Simulation geometry and command descriptions come from recording notes. They
+  do not replace the frozen benchmark fixtures; some playback disables failure
+  terminations. Observation noise does not reproduce hardware latency or dynamics.
+- Hardware footage has no established exact controller/checkpoint or assistance
+  record here. Tethering and handlers remain visible. Clips can overlap events;
+  no success/failure rate is calculated from the collection.
+- Earlier short GIFs and their [historical provenance](media-provenance.json) and
+  [encoding record](media-optimization-v1.json) are unchanged. Historical
+  filenames/identifiers remain in those records. New compact previews are
+  documented in [preview provenance](media-preview-expansion-v1.json).
 
-![Selected physical block playback with tether retained](../media/hardware/physical-block-alternate-pass.gif)
-
-Provided source 1.4–4.6 s excerpt from a different supplied block recording.
-This is a selected pass from three recordings, not a summary of all attempts. The robot and its tether/handler are retained in
-frame. The folder is labeled “15.5 cm step size,” but no calibrated measurement,
-controller identity or assistance record is established. This is physical block
-playback, not an independently adjudicated 15.5 cm benchmark or qualification of the research policy on
-hardware. Times are relative to the supplied edited MP4, not an
-asserted reconstruction of the original camera timeline.
-
-### Foam-pad course · added split-screen recording
-
-![Selected supplied split-screen Go2 pad-course recording](../media/hardware/physical-pad-course.gif)
-
-Provided source 5–9 s excerpt, tightened to show the pad motion rather than the idle lead-in. These split-screen views were already present in
-the supplied recording; no views were stitched together here. Their time alignment
-is unverified. Visible tethering and people remain in frame. It is a selected
-motion example, not a complete trial or quantified pad-course success rate.
-
-### Reflective panel · added split-screen recording
-
-![Selected supplied split-screen Go2 reflective-panel recording](../media/hardware/physical-reflective-panel.gif)
-
-Provided source 2–8 s excerpt. The panel looks reflective; its friction is not
-measured in the retained media evidence. Do not call this a quantified slippery-
-surface test. Views are supplied split-screen edits with unverified synchronization.
-The excerpt is not matched to the simulation friction-tile recording.
-
-### Behavior after loss of support
-
-![Complete supplied recovery-attempt sequence](../media/hardware/emergent-recovery-attempt.gif)
-
-All 3.733 s of the supplied **visual** timeline are represented at the original
-speed, sampled to 15 fps for GIF display (3.72 s after GIF delay rounding). The source file's audio/container tail
-is slightly longer; no recovery motion was removed. Loss of footing is followed
-by active leg/body motion, and the clip ends with the robot still down. No
-successful self-righting, unassisted recovery or recovery success rate is claimed.
-The sequence does not identify the training mechanism behind this response. Tethering and the supplied split-screen views
-remain visible; view synchronization and checkpoint identity are unverified.
-
-![Three timestamped frames from the supplied recovery-attempt source](../media/hardware/recovery-sequence.png)
-
-These are timestamped source frames, not fabricated states or a stitched claim
-of continuous motion. The complete recording is not hosted here.
-
-### Original physical recording
-
-![First-party physical Go2 motion](../media/hardware/physical-go2-locomotion.gif)
-
-Original 29–35 s excerpt from my physical recording collection. I confirmed
-the required permissions for the selected first-party media and artifacts.
-The recording's exact bytes duplicate a first-party deployed-policy video found
-in the broader media search, but a duplicate hash alone does not establish a
-checkpoint or controller identity. No high-step, command-tracking, quantitative
-hardware performance or safety-qualification claim is made. The complete recording is not hosted here; the exact policy caption remains unresolved.
-
-All newly added physical video sources were inspected. Three representative new
-clips were selected to cover distinct settings without loading every take into
-the README. Other supplied takes remain in the private inventory, including a pad
-recording that visibly contains a fall. The chosen excerpts do not constitute a
-complete evaluation or imply that failures were absent. Complete timelines remain
-outside this repository; full recordings are not hosted here.
-
-The 12 added analysis plots were also inspected. They show joint trajectories,
-contact-pattern and loading displays, but no sealed mapping from their time axis,
-underlying logs and selected video was established. They are inventoried rather
-than used as new quantitative hardware evidence or copied as benchmark figures.
-Editing-project files are retained only with the originals, not published here.
-
-## Additional candidates reviewed, not selected
-
-The broader first-party search also found directional before/after comparison
-clips, a generic policy-play recording, two payload/high-step physical recordings,
-a 12 cm native preview and an earlier rough-locomotion MuJoCo clip. These remain
-in the private media inventory. They were not inserted as training-stage evidence:
-policy identity, comparison semantics or relevance to this benchmark was not
-sufficiently established. Third-party reference footage is never presented as this
-project's result.
-
-Missing: exact-checkpoint Stage 1 flat, Stage 2 rough and historical Stage 3
-recordings. Useful future additions are **existing** recordings with an established
-policy identity, a caption record and permission scope—not a request for new runs.
+[Original measured results](results.md) · [Scope and negative results](limitations.md) ·
+[Experimental provenance](experimental-provenance.md) · [Media attribution](rights.md).
+No training-stage identity, hardware safety qualification or new research result
+is inferred from a selected recording. **approved_for_actuation: false**.
